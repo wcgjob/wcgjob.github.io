@@ -27,13 +27,13 @@
 <meta property="og:site_name" content="Hexo">
 <meta property="og:description" content="Hexo 部署到 GitHubhexo部署到GitHub,这样也能分享，不需要服务器  1. 注册一个GitHub的用户前往GitHub官网，点击注册。 2. 登录后新建一个公开的仓库点击New  仓库的名字一定是自己的用户名+.github.io，例如用户名zhangsan,仓库明就是zhangsan.github.io,选择公开仓库，点击create  3. 推送到仓库中首先在_config.">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content="https://osshexo.oss-cn-shanghai.aliyuncs.com/picture/20200701/Github1.png?OSSAccessKeyId=LTAI4GEZ56EZUJ2DySqiLKDT&Expires=1593617024&Signature=Xtt5SedrGiqdgblQ0GTwPhfZKHg%253D">
-<meta property="og:image" content="https://osshexo.oss-cn-shanghai.aliyuncs.com/picture/20200701/github2.png?OSSAccessKeyId=LTAI4GEZ56EZUJ2DySqiLKDT&Expires=1593617181&Signature=eUh6z6tQL81uD6joc07UA7nJL%252Fk%253D">
-<meta property="article:published_time" content="2020-07-01T15:15:25.000Z">
-<meta property="article:modified_time" content="2020-07-01T15:21:25.108Z">
+<meta property="og:image" content="https://osshexo.oss-cn-shanghai.aliyuncs.com/picture/20200701/Github1.png">
+<meta property="og:image" content="https://osshexo.oss-cn-shanghai.aliyuncs.com/picture/20200701/github2.png">
+<meta property="article:published_time" content="2020-07-01T15:21:08.877Z">
+<meta property="article:modified_time" content="2020-07-01T15:36:06.565Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://osshexo.oss-cn-shanghai.aliyuncs.com/picture/20200701/Github1.png?OSSAccessKeyId=LTAI4GEZ56EZUJ2DySqiLKDT&Expires=1593617024&Signature=Xtt5SedrGiqdgblQ0GTwPhfZKHg%253D">
+<meta name="twitter:image" content="https://osshexo.oss-cn-shanghai.aliyuncs.com/picture/20200701/Github1.png">
 
 <link rel="canonical" href="http://yoursite.com/2020/07/01/%E5%B0%86Hexo%E9%83%A8%E7%BD%B2%E5%88%B0GitHub/">
 
@@ -177,7 +177,7 @@
               <span class="post-meta-item-text">Posted on</span>
               
 
-              <time title="Created: 2020-07-01 23:15:25 / Modified: 23:21:25" itemprop="dateCreated datePublished" datetime="2020-07-01T23:15:25+08:00">2020-07-01</time>
+              <time title="Created: 2020-07-01 23:21:08 / Modified: 23:36:06" itemprop="dateCreated datePublished" datetime="2020-07-01T23:21:08+08:00">2020-07-01</time>
             </span>
 
           
@@ -195,19 +195,18 @@
 <hr>
 <h4 id="1-注册一个GitHub的用户"><a href="#1-注册一个GitHub的用户" class="headerlink" title="1. 注册一个GitHub的用户"></a>1. 注册一个GitHub的用户</h4><p>前往<a href="https://github.com/" target="_blank" rel="noopener">GitHub官网</a>，点击注册。</p>
 <h4 id="2-登录后新建一个公开的仓库"><a href="#2-登录后新建一个公开的仓库" class="headerlink" title="2. 登录后新建一个公开的仓库"></a>2. 登录后新建一个公开的仓库</h4><p>点击<code>New</code></p>
-<p><img src="https://osshexo.oss-cn-shanghai.aliyuncs.com/picture/20200701/Github1.png?OSSAccessKeyId=LTAI4GEZ56EZUJ2DySqiLKDT&Expires=1593617024&Signature=Xtt5SedrGiqdgblQ0GTwPhfZKHg%3D" alt="GitHub1"></p>
+<p><img src="https://osshexo.oss-cn-shanghai.aliyuncs.com/picture/20200701/Github1.png" alt="GitHub1"></p>
 <p>仓库的名字一定是自己的用户名+<code>.github.io</code>，例如用户名<code>zhangsan</code>,仓库明就是<code>zhangsan.github.io</code>,选择公开仓库，点击create</p>
-<p><img src="https://osshexo.oss-cn-shanghai.aliyuncs.com/picture/20200701/github2.png?OSSAccessKeyId=LTAI4GEZ56EZUJ2DySqiLKDT&Expires=1593617181&Signature=eUh6z6tQL81uD6joc07UA7nJL%2Fk%3D" alt="github2"></p>
+<p><img src="https://osshexo.oss-cn-shanghai.aliyuncs.com/picture/20200701/github2.png" alt="github2"></p>
 <h3 id="3-推送到仓库中"><a href="#3-推送到仓库中" class="headerlink" title="3. 推送到仓库中"></a>3. 推送到仓库中</h3><p>首先在<code>_config.yml</code>修改参数，加上</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repo: 你的仓库（Repository）</span><br><span class="line">  branch:master</span><br></pre></td></tr></table></figure>
 
 <p>然后执行命令</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo g</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight plain"><figcaption><span>clean``` </span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">清除缓存文件 (db.json) 和已生成的静态文件 (public)。</span><br><span class="line"></span><br><span class="line">&#96;&#96;&#96;hexo d&#96;&#96;&#96;是&#96;&#96;&#96;hexo deploy</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><figcaption><span>clean```</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">清除缓存文件 (db.json) 和已生成的静态文件 (public)。</span><br><span class="line"></span><br><span class="line">&#96;&#96;&#96;hexo d&#96;&#96;&#96;是&#96;&#96;&#96;hexo deploy</span><br></pre></td></tr></table></figure>
 <p>部署网站</p>
 <p>可以简化成一条命令</p>
-<figure class="highlight plain"><figcaption><span>clean && hexo g && hexo d ```</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br><span class="line">弹出提示框，输入github的账号和密码，稍等片刻</span><br><span class="line">![github3](https:&#x2F;&#x2F;osshexo.oss-cn-shanghai.aliyuncs.com&#x2F;picture&#x2F;20200701&#x2F;github3.png?OSSAccessKeyId&#x3D;LTAI4GEZ56EZUJ2DySqiLKDT&amp;Expires&#x3D;1593617945&amp;Signature&#x3D;McPD3ii6EqkpCZYoqnxSOoy1koA%3D)</span><br><span class="line"></span><br><span class="line">打开浏览器，在浏览器输入自己的用户名+&#96;&#96;&#96;.github.io</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><figcaption><span>clean && hexo g && hexo d ```</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br><span class="line">弹出提示框，输入github的账号和密码，稍等片刻</span><br><span class="line">![github3](https:&#x2F;&#x2F;osshexo.oss-cn-shanghai.aliyuncs.com&#x2F;picture&#x2F;20200701&#x2F;github3.png)</span><br><span class="line"></span><br><span class="line">打开浏览器，在浏览器输入自己的用户名+&#96;&#96;&#96;.github.io</span><br></pre></td></tr></table></figure>
 
 
 
