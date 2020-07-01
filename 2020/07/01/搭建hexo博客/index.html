@@ -20,28 +20,39 @@
     var CONFIG = {"hostname":"yoursite.com","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://yoursite.com/index.html">
+  <meta name="description" content="Hexo简介Hexo 是一个快速、简洁且高效的博客框架。Hexo 使用 Markdown（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。  Hexo搭建步骤1.安装Git(Windows)Git官网 我选择了腾讯软件中心搜索Git,或者淘宝镜像，因为访问到Git官网实在太慢了 随意在任意桌面右键,有Git Bash代表安装成功！  Git Bash可以使用Win自带的命令 2">
+<meta property="og:type" content="article">
+<meta property="og:title" content="搭建hexo博客">
+<meta property="og:url" content="http://yoursite.com/2020/07/01/%E6%90%AD%E5%BB%BAhexo%E5%8D%9A%E5%AE%A2/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="Hexo简介Hexo 是一个快速、简洁且高效的博客框架。Hexo 使用 Markdown（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。  Hexo搭建步骤1.安装Git(Windows)Git官网 我选择了腾讯软件中心搜索Git,或者淘宝镜像，因为访问到Git官网实在太慢了 随意在任意桌面右键,有Git Bash代表安装成功！  Git Bash可以使用Win自带的命令 2">
 <meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://osshexo.oss-cn-shanghai.aliyuncs.com/picture/20200701/git1.png?OSSAccessKeyId=LTAI4GEZ56EZUJ2DySqiLKDT&Expires=1593613306&Signature=51Ei%252BGHCSVIfELJLv3zF3y4UST8%253D">
+<meta property="og:image" content="https://osshexo.oss-cn-shanghai.aliyuncs.com/picture/20200701/nodejs1.png?OSSAccessKeyId=LTAI4GEZ56EZUJ2DySqiLKDT&Expires=1593613373&Signature=%252FNFlLATiiM8CsjXer%252FOczBfCHdQ%253D">
+<meta property="og:image" content="https://osshexo.oss-cn-shanghai.aliyuncs.com/picture/20200701/hexo2.png?OSSAccessKeyId=LTAI4GEZ56EZUJ2DySqiLKDT&Expires=1593614726&Signature=y5h0TT%252FbM7Z6wu22xiSIkwzbSHE%253D">
+<meta property="og:image" content="https://osshexo.oss-cn-shanghai.aliyuncs.com/picture/20200701/hexo3.png?OSSAccessKeyId=LTAI4GEZ56EZUJ2DySqiLKDT&Expires=1593616059&Signature=6U7QaJkrWggSuyoW1nhhWu7rsMk%253D">
+<meta property="og:image" content="https://osshexo.oss-cn-shanghai.aliyuncs.com/picture/20200701/hexo4.png?OSSAccessKeyId=LTAI4GEZ56EZUJ2DySqiLKDT&Expires=1593616094&Signature=%252BUhDQDymKG2cYCN3BIDK74KltIc%253D">
+<meta property="og:image" content="https://osshexo.oss-cn-shanghai.aliyuncs.com/picture/20200701/hexo1.png?OSSAccessKeyId=LTAI4GEZ56EZUJ2DySqiLKDT&Expires=1593615991&Signature=7byGXdNFCAmUrhKRqGvDw%252B62560%253D">
+<meta property="article:published_time" content="2020-07-01T14:40:49.000Z">
+<meta property="article:modified_time" content="2020-07-01T14:47:16.116Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://osshexo.oss-cn-shanghai.aliyuncs.com/picture/20200701/git1.png?OSSAccessKeyId=LTAI4GEZ56EZUJ2DySqiLKDT&Expires=1593613306&Signature=51Ei%252BGHCSVIfELJLv3zF3y4UST8%253D">
 
-<link rel="canonical" href="http://yoursite.com/">
+<link rel="canonical" href="http://yoursite.com/2020/07/01/%E6%90%AD%E5%BB%BAhexo%E5%8D%9A%E5%AE%A2/">
 
 
 <script id="page-configurations">
   // https://hexo.io/docs/variables.html
   CONFIG.page = {
     sidebar: "",
-    isHome : true,
-    isPost : false,
+    isHome : false,
+    isPost : true,
     lang   : 'en'
   };
 </script>
 
-  <title>Hexo</title>
+  <title>搭建hexo博客 | Hexo</title>
   
 
 
@@ -139,9 +150,10 @@
         <div class="content-wrap">
           
 
-          <div class="content index posts-expand">
+          <div class="content post posts-expand">
             
-      
+
+    
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
@@ -157,10 +169,9 @@
       <meta itemprop="name" content="Hexo">
     </span>
       <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2020/07/01/%E6%90%AD%E5%BB%BAhexo%E5%8D%9A%E5%AE%A2/" class="post-title-link" itemprop="url">搭建hexo博客</a>
-        </h2>
+        <h1 class="post-title" itemprop="name headline">
+          搭建hexo博客
+        </h1>
 
         <div class="post-meta">
             <span class="post-meta-item">
@@ -184,7 +195,7 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h3 id="Hexo简介"><a href="#Hexo简介" class="headerlink" title="Hexo简介"></a>Hexo简介</h3><p>Hexo 是一个快速、简洁且高效的博客框架。Hexo 使用 Markdown（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。</p>
+        <h3 id="Hexo简介"><a href="#Hexo简介" class="headerlink" title="Hexo简介"></a>Hexo简介</h3><p>Hexo 是一个快速、简洁且高效的博客框架。Hexo 使用 Markdown（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。</p>
 <hr>
 <h3 id="Hexo搭建步骤"><a href="#Hexo搭建步骤" class="headerlink" title="Hexo搭建步骤"></a>Hexo搭建步骤</h3><h3 id="1-安装Git-Windows"><a href="#1-安装Git-Windows" class="headerlink" title="1.安装Git(Windows)"></a>1.安装Git(Windows)</h3><p><a href="https://gitforwindows.org/" target="_blank" rel="noopener">Git官网</a></p>
 <p>我选择了<a href="https://pc.qq.com/" target="_blank" rel="noopener">腾讯软件中心</a>搜索Git,或者<a href="https://npm.taobao.org/mirrors/git-for-windows/" target="_blank" rel="noopener">淘宝镜像</a>，因为访问到Git官网实在太慢了</p>
@@ -219,98 +230,30 @@
 <p>默认情况下，访问网址为： <a href="http://localhost:4000/" target="_blank" rel="noopener">http://localhost:4000/</a><br><img src="https://osshexo.oss-cn-shanghai.aliyuncs.com/picture/20200701/hexo1.png?OSSAccessKeyId=LTAI4GEZ56EZUJ2DySqiLKDT&Expires=1593615991&Signature=7byGXdNFCAmUrhKRqGvDw%2B62560%3D" alt=""></p>
 <p>hexo已经安装可以使用了！</p>
 
-      
     </div>
 
     
     
     
+
       <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
 
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/06/30/hello-world/">
+        
 
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="John Doe">
-      <meta itemprop="description" content="">
-    </span>
 
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hexo">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2020/06/30/hello-world/" class="post-title-link" itemprop="url">Hello World</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-
-              <time title="Created: 2020-06-30 14:45:38" itemprop="dateCreated datePublished" datetime="2020-06-30T14:45:38+08:00">2020-06-30</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2020-06-29 11:11:03" itemprop="dateModified" datetime="2020-06-29T11:11:03+08:00">2020-06-29</time>
-              </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
-      
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2020/06/30/hello-world/" rel="prev" title="Hello World">
+      <i class="fa fa-chevron-left"></i> Hello World
+    </a></div>
+      <div class="post-nav-item"></div>
     </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
       </footer>
+    
   </article>
   
   
-  
-
-
   
 
 
@@ -363,6 +306,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#Hexo简介"><span class="nav-number">1.</span> <span class="nav-text">Hexo简介</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Hexo搭建步骤"><span class="nav-number">2.</span> <span class="nav-text">Hexo搭建步骤</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-安装Git-Windows"><span class="nav-number">3.</span> <span class="nav-text">1.安装Git(Windows)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-安装nodejs（Windows）"><span class="nav-number">4.</span> <span class="nav-text">2. 安装nodejs（Windows）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-安装hexo"><span class="nav-number">5.</span> <span class="nav-text">3. 安装hexo</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
