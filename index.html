@@ -145,6 +145,83 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/07/01/%E5%B0%86Hexo%E9%83%A8%E7%BD%B2%E5%88%B0GitHub/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="John Doe">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/07/01/%E5%B0%86Hexo%E9%83%A8%E7%BD%B2%E5%88%B0GitHub/" class="post-title-link" itemprop="url">将Hexo部署到GitHub</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+              
+
+              <time title="Created: 2020-07-01 23:15:25 / Modified: 23:21:25" itemprop="dateCreated datePublished" datetime="2020-07-01T23:15:25+08:00">2020-07-01</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h3 id="Hexo-部署到-GitHub"><a href="#Hexo-部署到-GitHub" class="headerlink" title="Hexo 部署到 GitHub"></a>Hexo 部署到 GitHub</h3><p>hexo部署到GitHub,这样也能分享，不需要服务器</p>
+<hr>
+<h4 id="1-注册一个GitHub的用户"><a href="#1-注册一个GitHub的用户" class="headerlink" title="1. 注册一个GitHub的用户"></a>1. 注册一个GitHub的用户</h4><p>前往<a href="https://github.com/" target="_blank" rel="noopener">GitHub官网</a>，点击注册。</p>
+<h4 id="2-登录后新建一个公开的仓库"><a href="#2-登录后新建一个公开的仓库" class="headerlink" title="2. 登录后新建一个公开的仓库"></a>2. 登录后新建一个公开的仓库</h4><p>点击<code>New</code></p>
+<p><img src="https://osshexo.oss-cn-shanghai.aliyuncs.com/picture/20200701/Github1.png?OSSAccessKeyId=LTAI4GEZ56EZUJ2DySqiLKDT&Expires=1593617024&Signature=Xtt5SedrGiqdgblQ0GTwPhfZKHg%3D" alt="GitHub1"></p>
+<p>仓库的名字一定是自己的用户名+<code>.github.io</code>，例如用户名<code>zhangsan</code>,仓库明就是<code>zhangsan.github.io</code>,选择公开仓库，点击create</p>
+<p><img src="https://osshexo.oss-cn-shanghai.aliyuncs.com/picture/20200701/github2.png?OSSAccessKeyId=LTAI4GEZ56EZUJ2DySqiLKDT&Expires=1593617181&Signature=eUh6z6tQL81uD6joc07UA7nJL%2Fk%3D" alt="github2"></p>
+<h3 id="3-推送到仓库中"><a href="#3-推送到仓库中" class="headerlink" title="3. 推送到仓库中"></a>3. 推送到仓库中</h3><p>首先在<code>_config.yml</code>修改参数，加上</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repo: 你的仓库（Repository）</span><br><span class="line">  branch:master</span><br></pre></td></tr></table></figure>
+
+<p>然后执行命令</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo g</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plain"><figcaption><span>clean``` </span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">清除缓存文件 (db.json) 和已生成的静态文件 (public)。</span><br><span class="line"></span><br><span class="line">&#96;&#96;&#96;hexo d&#96;&#96;&#96;是&#96;&#96;&#96;hexo deploy</span><br></pre></td></tr></table></figure>
+<p>部署网站</p>
+<p>可以简化成一条命令</p>
+<figure class="highlight plain"><figcaption><span>clean && hexo g && hexo d ```</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br><span class="line">弹出提示框，输入github的账号和密码，稍等片刻</span><br><span class="line">![github3](https:&#x2F;&#x2F;osshexo.oss-cn-shanghai.aliyuncs.com&#x2F;picture&#x2F;20200701&#x2F;github3.png?OSSAccessKeyId&#x3D;LTAI4GEZ56EZUJ2DySqiLKDT&amp;Expires&#x3D;1593617945&amp;Signature&#x3D;McPD3ii6EqkpCZYoqnxSOoy1koA%3D)</span><br><span class="line"></span><br><span class="line">打开浏览器，在浏览器输入自己的用户名+&#96;&#96;&#96;.github.io</span><br></pre></td></tr></table></figure>
+
+
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/07/01/%E6%90%AD%E5%BB%BAhexo%E5%8D%9A%E5%AE%A2/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -170,7 +247,7 @@
               <span class="post-meta-item-text">Posted on</span>
               
 
-              <time title="Created: 2020-07-01 22:40:49 / Modified: 22:47:16" itemprop="dateCreated datePublished" datetime="2020-07-01T22:40:49+08:00">2020-07-01</time>
+              <time title="Created: 2020-07-01 22:46:33 / Modified: 22:50:55" itemprop="dateCreated datePublished" datetime="2020-07-01T22:46:33+08:00">2020-07-01</time>
             </span>
 
           
@@ -189,13 +266,13 @@
 <h3 id="Hexo搭建步骤"><a href="#Hexo搭建步骤" class="headerlink" title="Hexo搭建步骤"></a>Hexo搭建步骤</h3><h3 id="1-安装Git-Windows"><a href="#1-安装Git-Windows" class="headerlink" title="1.安装Git(Windows)"></a>1.安装Git(Windows)</h3><p><a href="https://gitforwindows.org/" target="_blank" rel="noopener">Git官网</a></p>
 <p>我选择了<a href="https://pc.qq.com/" target="_blank" rel="noopener">腾讯软件中心</a>搜索Git,或者<a href="https://npm.taobao.org/mirrors/git-for-windows/" target="_blank" rel="noopener">淘宝镜像</a>，因为访问到Git官网实在太慢了</p>
 <p>随意在任意桌面右键,有Git Bash代表安装成功！</p>
-<p><img src="https://osshexo.oss-cn-shanghai.aliyuncs.com/picture/20200701/git1.png?OSSAccessKeyId=LTAI4GEZ56EZUJ2DySqiLKDT&Expires=1593613306&Signature=51Ei%2BGHCSVIfELJLv3zF3y4UST8%3D" alt="git"></p>
+<p><img src="https://osshexo.oss-cn-shanghai.aliyuncs.com/picture/20200701/git1.png?OSSAccessKeyId=LTAI4GEZ56EZUJ2DySqiLKDT&Expires=1593616464&Signature=7lBBFCuC4z8dyjfQ9exOZF9rZ8g%3D" alt="git"></p>
 <p>Git Bash可以使用Win自带的命令</p>
 <h3 id="2-安装nodejs（Windows）"><a href="#2-安装nodejs（Windows）" class="headerlink" title="2. 安装nodejs（Windows）"></a>2. 安装nodejs（Windows）</h3><p><a href="https://nodejs.org/zh-cn/download/" target="_blank" rel="noopener">nodejs官网下载</a></p>
 <p>选择LTS(长期支持)</p>
 <p>安装完后，打开命令行</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">node -v</span><br><span class="line">npm -v</span><br></pre></td></tr></table></figure>
-<p><img src="https://osshexo.oss-cn-shanghai.aliyuncs.com/picture/20200701/nodejs1.png?OSSAccessKeyId=LTAI4GEZ56EZUJ2DySqiLKDT&Expires=1593613373&Signature=%2FNFlLATiiM8CsjXer%2FOczBfCHdQ%3D" alt="nodejs"></p>
+<p><img src="https://osshexo.oss-cn-shanghai.aliyuncs.com/picture/20200701/nodejs1.png?OSSAccessKeyId=LTAI4GEZ56EZUJ2DySqiLKDT&Expires=1593616486&Signature=qPDnEKOioDQe95l%2Fnj1WTMyCtEo%3D" alt="nodejs"></p>
 <h3 id="3-安装hexo"><a href="#3-安装hexo" class="headerlink" title="3. 安装hexo"></a>3. 安装hexo</h3><p>输入命令</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g hexo-cli</span><br></pre></td></tr></table></figure>
 
@@ -376,7 +453,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">2</span>
+          <span class="site-state-item-count">3</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
