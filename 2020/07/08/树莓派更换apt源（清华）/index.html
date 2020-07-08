@@ -20,22 +20,23 @@
     var CONFIG = {"hostname":"yoursite.com","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta name="description" content="Hexo 部署到 GitHubhexo部署到GitHub,这样也能分享，不需要服务器  1. 注册一个GitHub的用户前往GitHub官网，点击注册。 2. 登录后新建一个公开的仓库点击New  仓库的名字一定是自己的用户名+.github.io，例如用户名zhangsan,仓库明就是zhangsan.github.io,选择公开仓库，点击create  3. 推送到仓库中首先在_config.">
+  <meta name="description" content="编辑 &#x2F;etc&#x2F;apt&#x2F;sources.list 文件，注释原文件所有内容1nano &#x2F;etc&#x2F;apt&#x2F;sources.list 加入下面内容 12deb http:&#x2F;&#x2F;mirrors.tuna.tsinghua.edu.cn&#x2F;raspberry-pi-os&#x2F;raspbian&#x2F; buster main non-free">
 <meta property="og:type" content="article">
-<meta property="og:title" content="将Hexo部署到GitHub">
-<meta property="og:url" content="http://yoursite.com/2020/07/01/%E5%B0%86Hexo%E9%83%A8%E7%BD%B2%E5%88%B0GitHub/index.html">
+<meta property="og:title" content="树莓派更换apt源（清华）">
+<meta property="og:url" content="http://yoursite.com/2020/07/08/%E6%A0%91%E8%8E%93%E6%B4%BE%E6%9B%B4%E6%8D%A2apt%E6%BA%90%EF%BC%88%E6%B8%85%E5%8D%8E%EF%BC%89/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="Hexo 部署到 GitHubhexo部署到GitHub,这样也能分享，不需要服务器  1. 注册一个GitHub的用户前往GitHub官网，点击注册。 2. 登录后新建一个公开的仓库点击New  仓库的名字一定是自己的用户名+.github.io，例如用户名zhangsan,仓库明就是zhangsan.github.io,选择公开仓库，点击create  3. 推送到仓库中首先在_config.">
+<meta property="og:description" content="编辑 &#x2F;etc&#x2F;apt&#x2F;sources.list 文件，注释原文件所有内容1nano &#x2F;etc&#x2F;apt&#x2F;sources.list 加入下面内容 12deb http:&#x2F;&#x2F;mirrors.tuna.tsinghua.edu.cn&#x2F;raspberry-pi-os&#x2F;raspbian&#x2F; buster main non-free">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content="https://osshexo.oss-cn-shanghai.aliyuncs.com/picture/20200701/Github1.png">
-<meta property="og:image" content="https://osshexo.oss-cn-shanghai.aliyuncs.com/picture/20200701/github2.png">
-<meta property="article:published_time" content="2020-07-01T15:21:08.877Z">
-<meta property="article:modified_time" content="2020-07-01T15:36:06.565Z">
+<meta property="og:image" content="https://osshexo.oss-cn-shanghai.aliyuncs.com/picture/20200708/nano.png">
+<meta property="og:image" content="https://osshexo.oss-cn-shanghai.aliyuncs.com/picture/20200708/nano1.png">
+<meta property="og:image" content="https://osshexo.oss-cn-shanghai.aliyuncs.com/picture/20200708/apt%20update.png">
+<meta property="article:published_time" content="2020-07-08T14:09:26.000Z">
+<meta property="article:modified_time" content="2020-07-08T14:15:23.324Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://osshexo.oss-cn-shanghai.aliyuncs.com/picture/20200701/Github1.png">
+<meta name="twitter:image" content="https://osshexo.oss-cn-shanghai.aliyuncs.com/picture/20200708/nano.png">
 
-<link rel="canonical" href="http://yoursite.com/2020/07/01/%E5%B0%86Hexo%E9%83%A8%E7%BD%B2%E5%88%B0GitHub/">
+<link rel="canonical" href="http://yoursite.com/2020/07/08/%E6%A0%91%E8%8E%93%E6%B4%BE%E6%9B%B4%E6%8D%A2apt%E6%BA%90%EF%BC%88%E6%B8%85%E5%8D%8E%EF%BC%89/">
 
 
 <script id="page-configurations">
@@ -48,7 +49,7 @@
   };
 </script>
 
-  <title>将Hexo部署到GitHub | Hexo</title>
+  <title>树莓派更换apt源（清华） | Hexo</title>
   
 
 
@@ -153,7 +154,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/07/01/%E5%B0%86Hexo%E9%83%A8%E7%BD%B2%E5%88%B0GitHub/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/07/08/%E6%A0%91%E8%8E%93%E6%B4%BE%E6%9B%B4%E6%8D%A2apt%E6%BA%90%EF%BC%88%E6%B8%85%E5%8D%8E%EF%BC%89/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -166,7 +167,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          将Hexo部署到GitHub
+          树莓派更换apt源（清华）
         </h1>
 
         <div class="post-meta">
@@ -177,7 +178,7 @@
               <span class="post-meta-item-text">Posted on</span>
               
 
-              <time title="Created: 2020-07-01 23:21:08 / Modified: 23:36:06" itemprop="dateCreated datePublished" datetime="2020-07-01T23:21:08+08:00">2020-07-01</time>
+              <time title="Created: 2020-07-08 22:09:26 / Modified: 22:15:23" itemprop="dateCreated datePublished" datetime="2020-07-08T22:09:26+08:00">2020-07-08</time>
             </span>
 
           
@@ -191,24 +192,18 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <h3 id="Hexo-部署到-GitHub"><a href="#Hexo-部署到-GitHub" class="headerlink" title="Hexo 部署到 GitHub"></a>Hexo 部署到 GitHub</h3><p>hexo部署到GitHub,这样也能分享，不需要服务器</p>
-<hr>
-<h4 id="1-注册一个GitHub的用户"><a href="#1-注册一个GitHub的用户" class="headerlink" title="1. 注册一个GitHub的用户"></a>1. 注册一个GitHub的用户</h4><p>前往<a href="https://github.com/" target="_blank" rel="noopener">GitHub官网</a>，点击注册。</p>
-<h4 id="2-登录后新建一个公开的仓库"><a href="#2-登录后新建一个公开的仓库" class="headerlink" title="2. 登录后新建一个公开的仓库"></a>2. 登录后新建一个公开的仓库</h4><p>点击<code>New</code></p>
-<p><img src="https://osshexo.oss-cn-shanghai.aliyuncs.com/picture/20200701/Github1.png" alt="GitHub1"></p>
-<p>仓库的名字一定是自己的用户名+<code>.github.io</code>，例如用户名<code>zhangsan</code>,仓库明就是<code>zhangsan.github.io</code>,选择公开仓库，点击create</p>
-<p><img src="https://osshexo.oss-cn-shanghai.aliyuncs.com/picture/20200701/github2.png" alt="github2"></p>
-<h3 id="3-推送到仓库中"><a href="#3-推送到仓库中" class="headerlink" title="3. 推送到仓库中"></a>3. 推送到仓库中</h3><p>首先在<code>_config.yml</code>修改参数，加上</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repo: 你的仓库（Repository）</span><br><span class="line">  branch:master</span><br></pre></td></tr></table></figure>
-
-<p>然后执行命令</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo g</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure>
-<figure class="highlight plain"><figcaption><span>clean```</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">清除缓存文件 (db.json) 和已生成的静态文件 (public)。</span><br><span class="line"></span><br><span class="line">&#96;&#96;&#96;hexo d&#96;&#96;&#96;是&#96;&#96;&#96;hexo deploy</span><br></pre></td></tr></table></figure>
-<p>部署网站</p>
-<p>可以简化成一条命令</p>
-<figure class="highlight plain"><figcaption><span>clean && hexo g && hexo d ```</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br><span class="line">弹出提示框，输入github的账号和密码，稍等片刻</span><br><span class="line">![github3](https:&#x2F;&#x2F;osshexo.oss-cn-shanghai.aliyuncs.com&#x2F;picture&#x2F;20200701&#x2F;github3.png)</span><br><span class="line"></span><br><span class="line">打开浏览器，在浏览器输入自己的用户名+&#96;&#96;&#96;.github.io</span><br></pre></td></tr></table></figure>
-
-
+        <h3 id="编辑-etc-apt-sources-list-文件，注释原文件所有内容"><a href="#编辑-etc-apt-sources-list-文件，注释原文件所有内容" class="headerlink" title="编辑 /etc/apt/sources.list 文件，注释原文件所有内容"></a>编辑 <code>/etc/apt/sources.list</code> 文件，注释原文件所有内容</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">nano &#x2F;etc&#x2F;apt&#x2F;sources.list</span><br></pre></td></tr></table></figure>
+<p>加入下面内容</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">deb http:&#x2F;&#x2F;mirrors.tuna.tsinghua.edu.cn&#x2F;raspberry-pi-os&#x2F;raspbian&#x2F; buster main non-free contrib rpi</span><br><span class="line">deb-src http:&#x2F;&#x2F;mirrors.tuna.tsinghua.edu.cn&#x2F;raspberry-pi-os&#x2F;raspbian&#x2F; buster main non-free contrib rpi</span><br></pre></td></tr></table></figure>
+<p>现在这个文件是这样的<br><img src="https://osshexo.oss-cn-shanghai.aliyuncs.com/picture/20200708/nano.png" alt="nano"></p>
+<p>Ctrl+O 回车 保存<br>Ctrl+X 退出</p>
+<h3 id="编辑-etc-apt-sources-list-d-raspi-list-文件，注释所有内容，用以下内容取代："><a href="#编辑-etc-apt-sources-list-d-raspi-list-文件，注释所有内容，用以下内容取代：" class="headerlink" title="编辑 /etc/apt/sources.list.d/raspi.list 文件，注释所有内容，用以下内容取代："></a>编辑 <code>/etc/apt/sources.list.d/raspi.list</code> 文件，注释所有内容，用以下内容取代：</h3><p><code>nano /etc/apt/sources.list.d/raspi.list</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">deb http:&#x2F;&#x2F;mirrors.tuna.tsinghua.edu.cn&#x2F;raspberrypi&#x2F; buster main ui</span><br></pre></td></tr></table></figure>
+<p><img src="https://osshexo.oss-cn-shanghai.aliyuncs.com/picture/20200708/nano1.png" alt="nano1"></p>
+<p>ctrl+O 回车 保存<br>ctrl+X 退出</p>
+<p><code>apt update</code></p>
+<p>更新速度达到了2M/s</p>
+<p><img src="https://osshexo.oss-cn-shanghai.aliyuncs.com/picture/20200708/apt%20update.png" alt="apt update"></p>
 
     </div>
 
@@ -224,13 +219,10 @@
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/2020/06/30/hello-world/" rel="prev" title="Hello World">
-      <i class="fa fa-chevron-left"></i> Hello World
+    <a href="/2020/07/02/%E6%90%AD%E5%BB%BAhexo%E5%8D%9A%E5%AE%A2/" rel="prev" title="搭建hexo博客">
+      <i class="fa fa-chevron-left"></i> 搭建hexo博客
     </a></div>
-      <div class="post-nav-item">
-    <a href="/2020/07/02/%E6%90%AD%E5%BB%BAhexo%E5%8D%9A%E5%AE%A2/" rel="next" title="搭建hexo博客">
-      搭建hexo博客 <i class="fa fa-chevron-right"></i>
-    </a></div>
+      <div class="post-nav-item"></div>
     </div>
       </footer>
     
@@ -289,7 +281,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#Hexo-部署到-GitHub"><span class="nav-number">1.</span> <span class="nav-text">Hexo 部署到 GitHub</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-注册一个GitHub的用户"><span class="nav-number">1.1.</span> <span class="nav-text">1. 注册一个GitHub的用户</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-登录后新建一个公开的仓库"><span class="nav-number">1.2.</span> <span class="nav-text">2. 登录后新建一个公开的仓库</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-推送到仓库中"><span class="nav-number">2.</span> <span class="nav-text">3. 推送到仓库中</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#编辑-etc-apt-sources-list-文件，注释原文件所有内容"><span class="nav-number">1.</span> <span class="nav-text">编辑 &#x2F;etc&#x2F;apt&#x2F;sources.list 文件，注释原文件所有内容</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#编辑-etc-apt-sources-list-d-raspi-list-文件，注释所有内容，用以下内容取代："><span class="nav-number">2.</span> <span class="nav-text">编辑 &#x2F;etc&#x2F;apt&#x2F;sources.list.d&#x2F;raspi.list 文件，注释所有内容，用以下内容取代：</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
