@@ -145,6 +145,74 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/07/14/armCentos7%E6%9B%B4%E6%8D%A2%E5%8D%8E%E4%B8%BA%E6%BA%90/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="John Doe">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/07/14/armCentos7%E6%9B%B4%E6%8D%A2%E5%8D%8E%E4%B8%BA%E6%BA%90/" class="post-title-link" itemprop="url">华为源</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+              
+
+              <time title="Created: 2020-07-14 23:18:07 / Modified: 23:27:57" itemprop="dateCreated datePublished" datetime="2020-07-14T23:18:07+08:00">2020-07-14</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h3 id="最近我在树莓派下尝试了arm版的centos，但是下载速度很慢，所以我更换了华为源"><a href="#最近我在树莓派下尝试了arm版的centos，但是下载速度很慢，所以我更换了华为源" class="headerlink" title="最近我在树莓派下尝试了arm版的centos，但是下载速度很慢，所以我更换了华为源"></a>最近我在树莓派下尝试了arm版的centos，但是下载速度很慢，所以我更换了华为源</h3><p>首先登陆<a href="https://mirrors.huaweicloud.com/" target="_blank" rel="noopener">华为开源站</a></p>
+<p>1、安装wget：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yum install wget -y</span><br></pre></td></tr></table></figure>
+<p>2.备份配置文件</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cp -a &#x2F;etc&#x2F;yum.repos.d&#x2F;CentOS-Base.repo &#x2F;etc&#x2F;yum.repos.d&#x2F;CentOS-Base.repo.bak</span><br></pre></td></tr></table></figure>
+<p>3.下载</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wget -O &#x2F;etc&#x2F;yum.repos.d&#x2F;CentOS-Base.repo https:&#x2F;&#x2F;repo.huaweicloud.com&#x2F;repository&#x2F;conf&#x2F;CentOS-AltArch-7.repo</span><br></pre></td></tr></table></figure>
+
+<p>4.执行<code>yum clean all</code>清除原有yum缓存。</p>
+<p>5.执行<code>yum makecache</code>（刷新缓存）</p>
+<h3 id="这样就可以使用华为镜像源了"><a href="#这样就可以使用华为镜像源了" class="headerlink" title="这样就可以使用华为镜像源了"></a>这样就可以使用华为镜像源了</h3>
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/07/08/%E6%A0%91%E8%8E%93%E6%B4%BE%E6%9B%B4%E6%8D%A2apt%E6%BA%90%EF%BC%88%E6%B8%85%E5%8D%8E%EF%BC%89/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -522,7 +590,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">4</span>
+          <span class="site-state-item-count">5</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
