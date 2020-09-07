@@ -4,6 +4,19 @@
   
     
     <entry>
+      <title></title>
+      <link href="/2020/09/08/hexo-bu-shu-dao-github/"/>
+      <url>/2020/09/08/hexo-bu-shu-dao-github/</url>
+      
+        <content type="html"><![CDATA[<h3 id="Hexo-部署到-GitHub"><a href="#Hexo-部署到-GitHub" class="headerlink" title="Hexo 部署到 GitHub"></a>Hexo 部署到 GitHub</h3><p>hexo部署到GitHub,这样也能分享，不需要服务器</p><hr><h4 id="1-注册一个GitHub的用户"><a href="#1-注册一个GitHub的用户" class="headerlink" title="1. 注册一个GitHub的用户"></a>1. 注册一个GitHub的用户</h4><p>前往<a href="https://github.com/">GitHub官网</a>，点击注册。</p><h4 id="2-登录后新建一个公开的仓库"><a href="#2-登录后新建一个公开的仓库" class="headerlink" title="2. 登录后新建一个公开的仓库"></a>2. 登录后新建一个公开的仓库</h4><p>点击<code>New</code></p><p><img src="https://osshexo.oss-cn-shanghai.aliyuncs.com/picture/20200701/Github1.png" alt="GitHub1"></p><p>仓库的名字一定是自己的用户名+<code>.github.io</code>，例如用户名<code>zhangsan</code>,仓库明就是<code>zhangsan.github.io</code>,选择公开仓库，点击create</p><p><img src="https://osshexo.oss-cn-shanghai.aliyuncs.com/picture/20200701/github2.png" alt="github2"></p><h3 id="3-推送到仓库中"><a href="#3-推送到仓库中" class="headerlink" title="3. 推送到仓库中"></a>3. 推送到仓库中</h3><p>首先在<code>_config.yml</code>修改参数，加上</p><pre><code>deploy:  type: git  repo: 你的仓库（Repository）  branch:master</code></pre><p>然后执行命令</p><pre><code>hexo cleanhexo ghexo d</code></pre><p><code>hexo clean</code></p><p>清除缓存文件 (db.json) 和已生成的静态文件 (public)。</p><p><code>hexo d</code>是<code>hexo deploy</code><br>部署网站</p><p>可以简化成一条命令</p><p><code>hexo clean &amp;&amp; hexo g &amp;&amp; hexo d</code></p><p>弹出提示框，输入github的账号和密码，稍等片刻<br><img src="https://osshexo.oss-cn-shanghai.aliyuncs.com/picture/20200701/github3.png" alt="github3"></p><p>打开浏览器，在浏览器输入自己的用户名+<code>.github.io</code></p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>修改树莓派ip</title>
       <link href="/2020/09/06/xiu-gai-shu-mei-pai-ip/"/>
       <url>/2020/09/06/xiu-gai-shu-mei-pai-ip/</url>

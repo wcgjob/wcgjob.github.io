@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="Hexo简介, Hexo">
+    <meta name="keywords" content="Hexo">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>Hexo简介 | Hexo</title>
+    <title>Hexo</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -309,12 +309,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/1.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/0.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">Hexo简介</h1>
+                    <h1 class="description center-align post-title"></h1>
                 </div>
             </div>
         </div>
@@ -443,21 +443,21 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2020-07-02
+                    2020-09-08
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2020-08-09
+                    2020-09-08
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    314
+                    216
                 </div>
                 
 
@@ -479,43 +479,27 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h3 id="Hexo简介"><a href="#Hexo简介" class="headerlink" title="Hexo简介"></a>Hexo简介</h3><p>Hexo 是一个快速、简洁且高效的博客框架。Hexo 使用 Markdown（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。</p>
+                <h3 id="Hexo-部署到-GitHub"><a href="#Hexo-部署到-GitHub" class="headerlink" title="Hexo 部署到 GitHub"></a>Hexo 部署到 GitHub</h3><p>hexo部署到GitHub,这样也能分享，不需要服务器</p>
 <hr>
-<h3 id="Hexo搭建步骤"><a href="#Hexo搭建步骤" class="headerlink" title="Hexo搭建步骤"></a>Hexo搭建步骤</h3><h3 id="1-安装Git-Windows"><a href="#1-安装Git-Windows" class="headerlink" title="1.安装Git(Windows)"></a>1.安装Git(Windows)</h3><p><a target="_blank" rel="noopener" href="https://gitforwindows.org/">Git官网</a></p>
-<p>我选择了<a target="_blank" rel="noopener" href="https://pc.qq.com/">腾讯软件中心</a>搜索Git,或者<a target="_blank" rel="noopener" href="https://npm.taobao.org/mirrors/git-for-windows/">淘宝镜像</a>，因为访问到Git官网实在太慢了</p>
-<p>随意在任意桌面右键,有Git Bash代表安装成功！</p>
-<p><img src="https://hexo.v-10.cn/picture/20200701/git1.png" alt="git"></p>
-<p>Git Bash可以使用Win自带的命令</p>
-<h3 id="2-安装nodejs（Windows）"><a href="#2-安装nodejs（Windows）" class="headerlink" title="2. 安装nodejs（Windows）"></a>2. 安装nodejs（Windows）</h3><p><a target="_blank" rel="noopener" href="https://nodejs.org/zh-cn/download/">nodejs官网下载</a></p>
-<p>选择LTS(长期支持)</p>
-<p>安装完后，打开命令行</p>
-<pre><code>node -v
-npm -v</code></pre><p><img src="https://hexo.v-10.cn/picture/20200701/nodejs1.png" alt="nodejs"></p>
-<h3 id="3-安装hexo"><a href="#3-安装hexo" class="headerlink" title="3. 安装hexo"></a>3. 安装hexo</h3><p>输入命令</p>
-<pre><code>npm install -g hexo-cli</code></pre><p>确认命令</p>
-<pre><code>hexo -v</code></pre><p><img src="https://hexo.v-10.cn/picture/20200701/hexo2.png" alt="hexo2"></p>
-<p>找个文件夹,初始化hexo</p>
-<pre><code>hexo init blog
-cd blog
-npm install</code></pre><p>新建完成后，指定文件夹的目录如下：</p>
-<pre><code>.
-├── _config.yml
-├── package.json
-├── scaffolds
-├── source
-|   ├── _drafts
-|   └── _posts
-└── themes</code></pre><p>我主要用到 配置文件<code>_config.yml</code>,主题<code>themes</code>,存放文章<code>source</code>这三个</p>
-<ol start="4">
-<li>运行hexo<br>输入两个命令<pre><code>hexo g
-hexo s</code></pre><img src="https://hexo.v-10.cn/picture/20200701/hexo3.png" alt=""></li>
-</ol>
-<p><img src="https://hexo.v-10.cn/picture/20200701/hexo4.png" alt=""></p>
-<p><code>hexo g</code> 是 <code>hexo generate</code>,生成静态文件<br><code>hexo s</code> 是 <code>hexo server</code>，启动服务器。 </p>
-<p>按Ctrl + C 停止</p>
-<p>我已经安装了Next主题，所以和默认不一样</p>
-<p>默认情况下，访问网址为： <a target="_blank" rel="noopener" href="http://localhost:4000/">http://localhost:4000/</a><br><img src="https://hexo.v-10.cn/picture/20200701/hexo1.png" alt=""></p>
-<p>hexo已经安装可以使用了！</p>
+<h4 id="1-注册一个GitHub的用户"><a href="#1-注册一个GitHub的用户" class="headerlink" title="1. 注册一个GitHub的用户"></a>1. 注册一个GitHub的用户</h4><p>前往<a target="_blank" rel="noopener" href="https://github.com/">GitHub官网</a>，点击注册。</p>
+<h4 id="2-登录后新建一个公开的仓库"><a href="#2-登录后新建一个公开的仓库" class="headerlink" title="2. 登录后新建一个公开的仓库"></a>2. 登录后新建一个公开的仓库</h4><p>点击<code>New</code></p>
+<p><img src="https://osshexo.oss-cn-shanghai.aliyuncs.com/picture/20200701/Github1.png" alt="GitHub1"></p>
+<p>仓库的名字一定是自己的用户名+<code>.github.io</code>，例如用户名<code>zhangsan</code>,仓库明就是<code>zhangsan.github.io</code>,选择公开仓库，点击create</p>
+<p><img src="https://osshexo.oss-cn-shanghai.aliyuncs.com/picture/20200701/github2.png" alt="github2"></p>
+<h3 id="3-推送到仓库中"><a href="#3-推送到仓库中" class="headerlink" title="3. 推送到仓库中"></a>3. 推送到仓库中</h3><p>首先在<code>_config.yml</code>修改参数，加上</p>
+<pre><code>deploy:
+  type: git
+  repo: 你的仓库（Repository）
+  branch:master</code></pre><p>然后执行命令</p>
+<pre><code>hexo clean
+hexo g
+hexo d</code></pre><p><code>hexo clean</code></p>
+<p>清除缓存文件 (db.json) 和已生成的静态文件 (public)。</p>
+<p><code>hexo d</code>是<code>hexo deploy</code><br>部署网站</p>
+<p>可以简化成一条命令</p>
+<p><code>hexo clean &amp;&amp; hexo g &amp;&amp; hexo d</code></p>
+<p>弹出提示框，输入github的账号和密码，稍等片刻<br><img src="https://osshexo.oss-cn-shanghai.aliyuncs.com/picture/20200701/github3.png" alt="github3"></p>
+<p>打开浏览器，在浏览器输入自己的用户名+<code>.github.io</code></p>
 
             </div>
             <hr/>
@@ -541,7 +525,7 @@ hexo s</code></pre><img src="https://hexo.v-10.cn/picture/20200701/hexo3.png" al
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://v-10.cn/2020/07/02/da-jian-hexo-bo-ke/">https://v-10.cn/2020/07/02/da-jian-hexo-bo-ke/</a>
+                    <a href="https://v-10.cn/2020/09/08/hexo-bu-shu-dao-github/">https://v-10.cn/2020/09/08/hexo-bu-shu-dao-github/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -618,71 +602,34 @@ hexo s</code></pre><img src="https://hexo.v-10.cn/picture/20200701/hexo3.png" al
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2020/07/14/armcentos7-geng-huan-hua-wei-yuan/">
+                <a href="/2020/09/08/hexo-bu-shu-dao-github/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/20.jpg" class="responsive-img" alt="华为源">
+                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="">
                         
-                        <span class="card-title">华为源</span>
+                        <span class="card-title"></span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            最近我在树莓派下尝试了arm版的centos，但是下载速度很慢，所以我更换了华为源首先登陆华为开源站
-1、安装wget：
-yum install wget -y2.备份配置文件
-cp -a /etc/yum.repos.d/CentOS-B
-                        
-                    </div>
-                    <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2020-07-14
-                        </span>
-                        <span class="publish-author">
-                            
-                            <i class="fas fa-user fa-fw"></i>
-                            
-                            
-                        </span>
-                    </div>
-                </div>
-                
-            </div>
-        </div>
-        
-        
-        <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">
-                本篇&nbsp;<i class="far fa-dot-circle"></i>
-            </div>
-            <div class="card">
-                <a href="/2020/07/02/da-jian-hexo-bo-ke/">
-                    <div class="card-image">
-                        
-                        
-                        <img src="/medias/featureimages/1.jpg" class="responsive-img" alt="Hexo简介">
-                        
-                        <span class="card-title">Hexo简介</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            Hexo简介Hexo 是一个快速、简洁且高效的博客框架。Hexo 使用 Markdown（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。
+                            Hexo 部署到 GitHubhexo部署到GitHub,这样也能分享，不需要服务器
 
-Hexo搭建步骤1.安装Git(Windows)Git官网
-我选择了腾讯软件中
+1. 注册一个GitHub的用户前往GitHub官网，点击注册。
+2. 登录后新建一个公开的仓库点击New
+
+仓库的名字一定是自己的用户名+.githu
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-07-02
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-09-08
                             </span>
                         <span class="publish-author">
                             
@@ -693,6 +640,44 @@ Hexo搭建步骤1.安装Git(Windows)Git官网
                     </div>
                 </div>
 
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2020/09/06/xiu-gai-shu-mei-pai-ip/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/16.jpg" class="responsive-img" alt="修改树莓派ip">
+                        
+                        <span class="card-title">修改树莓派ip</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            在/etc/network/interfaces查看信息 `cat /etc/network/interfaces`
+修改静态ip，需要到 /etc/dhcpcd.conf 然后修改/etc/dhcpcd.conf`vi  /etc/dhc
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-09-06
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-user fa-fw"></i>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
                 
             </div>
         </div>
