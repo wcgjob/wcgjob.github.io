@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://v-10.cn/2020/09/09/failed/</loc>
+    
+    <lastmod>2020-09-08</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://v-10.cn/2020/09/08/hexo-bu-shu-dao-github/</loc>
     
     <lastmod>2020-09-07</lastmod>
@@ -88,7 +95,7 @@
 
   <url>
     <loc>https://v-10.cn/</loc>
-    <lastmod>2020-09-08</lastmod>
+    <lastmod>2020-09-09</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
