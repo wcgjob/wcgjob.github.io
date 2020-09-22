@@ -4,11 +4,11 @@
   
     
     <entry>
-      <title>failed</title>
-      <link href="/2020/09/09/failed/"/>
-      <url>/2020/09/09/failed/</url>
+      <title>pycharm更改默认文件夹的地址</title>
+      <link href="/2020/09/23/pycharm-geng-gai-mo-ren-wen-jian-jia-de-di-zhi/"/>
+      <url>/2020/09/23/pycharm-geng-gai-mo-ren-wen-jian-jia-de-di-zhi/</url>
       
-        <content type="html"><![CDATA[]]></content>
+        <content type="html"><![CDATA[<p>pycharm打开项目的地址经常在c盘，每次更改都要改到文件地址，很麻烦，所以修改pycharm的默认文家地址</p><p>更改打开目录的默认路径：</p><p><code>File——&gt;Settings——&gt;Appearance&amp;Behavior——&gt;System Setting</code></p><p><img src="https://cdn.jsdelivr.net/gh/wcgjob/blog_img/img/20200923004410.png" alt=""></p><p>圈出来的地方就是默认地址</p>]]></content>
       
       
       

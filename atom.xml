@@ -6,18 +6,28 @@
   <link href="https://v-10.cn/atom.xml" rel="self"/>
   
   <link href="https://v-10.cn/"/>
-  <updated>2020-09-08T16:57:48.306Z</updated>
+  <updated>2020-09-22T16:47:55.210Z</updated>
   <id>https://v-10.cn/</id>
   
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>failed</title>
-    <link href="https://v-10.cn/2020/09/09/failed/"/>
-    <id>https://v-10.cn/2020/09/09/failed/</id>
-    <published>2020-09-08T16:57:46.000Z</published>
-    <updated>2020-09-08T16:57:48.306Z</updated>
+    <title>pycharm更改默认文件夹的地址</title>
+    <link href="https://v-10.cn/2020/09/23/pycharm-geng-gai-mo-ren-wen-jian-jia-de-di-zhi/"/>
+    <id>https://v-10.cn/2020/09/23/pycharm-geng-gai-mo-ren-wen-jian-jia-de-di-zhi/</id>
+    <published>2020-09-22T16:46:20.000Z</published>
+    <updated>2020-09-22T16:47:55.210Z</updated>
     
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;pycharm打开项目的地址经常在c盘，每次更改都要改到文件地址，很麻烦，所以修改pycharm的默认文家地址&lt;/p&gt;
+&lt;p&gt;更改打开目录的默认路径：&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;File——&amp;gt;Settings——&amp;gt;Appearance&amp;amp;Behavior—</summary>
+        
+      
     
     
     
@@ -29,7 +39,7 @@
     <link href="https://v-10.cn/2020/09/08/hexo-bu-shu-dao-github/"/>
     <id>https://v-10.cn/2020/09/08/hexo-bu-shu-dao-github/</id>
     <published>2020-09-07T17:01:00.000Z</published>
-    <updated>2020-09-07T17:02:03.149Z</updated>
+    <updated>2020-09-07T17:02:03.000Z</updated>
     
     
       
@@ -50,7 +60,7 @@
     <link href="https://v-10.cn/2020/09/06/xiu-gai-shu-mei-pai-ip/"/>
     <id>https://v-10.cn/2020/09/06/xiu-gai-shu-mei-pai-ip/</id>
     <published>2020-09-06T14:37:00.000Z</published>
-    <updated>2020-09-06T14:37:10.276Z</updated>
+    <updated>2020-09-06T14:37:10.000Z</updated>
     
     
       
