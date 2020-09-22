@@ -4,6 +4,19 @@
   
     
     <entry>
+      <title>pycharm更改字体大小</title>
+      <link href="/2020/09/23/pycharm-geng-gai-zi-ti-da-xiao/"/>
+      <url>/2020/09/23/pycharm-geng-gai-zi-ti-da-xiao/</url>
+      
+        <content type="html"><![CDATA[<p>默认字体大小看不清,所以调大点</p><p><code>Settings -&gt; Editor -&gt; Color Scheme -&gt; Color Scheme Font</code></p><p><img src="https://cdn.jsdelivr.net/gh/wcgjob/blog_img/img/20200923005911.png" alt=""></p><p>圈出来的就是字体大小</p><p><code>Font</code>是字体类型，</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>pycharm更改默认文件夹的地址</title>
       <link href="/2020/09/23/pycharm-geng-gai-mo-ren-wen-jian-jia-de-di-zhi/"/>
       <url>/2020/09/23/pycharm-geng-gai-mo-ren-wen-jian-jia-de-di-zhi/</url>
