@@ -6,17 +6,39 @@
   <link href="https://v-10.cn/atom.xml" rel="self"/>
   
   <link href="https://v-10.cn/"/>
-  <updated>2020-09-22T17:06:32.988Z</updated>
+  <updated>2020-09-29T16:25:39.759Z</updated>
   <id>https://v-10.cn/</id>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>scrapy一.创建项目</title>
+    <link href="https://v-10.cn/2020/09/30/scrapy-yi-chuang-jian-xiang-mu/"/>
+    <id>https://v-10.cn/2020/09/30/scrapy-yi-chuang-jian-xiang-mu/</id>
+    <published>2020-09-29T16:25:14.000Z</published>
+    <updated>2020-09-29T16:25:39.759Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;ol&gt;
+&lt;li&gt;&lt;h3 id=&quot;安装scrapy&quot;&gt;&lt;a href=&quot;#安装scrapy&quot; class=&quot;headerlink&quot; title=&quot;安装scrapy&quot;&gt;&lt;/a&gt;安装scrapy&lt;/h3&gt;&lt;code&gt;pip install scrapy</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>pycharm更改字体大小</title>
     <link href="https://v-10.cn/2020/09/23/pycharm-geng-gai-zi-ti-da-xiao/"/>
     <id>https://v-10.cn/2020/09/23/pycharm-geng-gai-zi-ti-da-xiao/</id>
     <published>2020-09-22T17:01:26.000Z</published>
-    <updated>2020-09-22T17:06:32.988Z</updated>
+    <updated>2020-09-22T17:06:36.000Z</updated>
     
     
       
@@ -39,7 +61,7 @@
     <link href="https://v-10.cn/2020/09/23/pycharm-geng-gai-mo-ren-wen-jian-jia-de-di-zhi/"/>
     <id>https://v-10.cn/2020/09/23/pycharm-geng-gai-mo-ren-wen-jian-jia-de-di-zhi/</id>
     <published>2020-09-22T16:46:20.000Z</published>
-    <updated>2020-09-22T16:47:55.210Z</updated>
+    <updated>2020-09-22T16:47:58.000Z</updated>
     
     
       

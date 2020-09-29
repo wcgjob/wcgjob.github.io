@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="pycharm更改默认文件夹的地址, Hexo">
+    <meta name="keywords" content="scrapy一.创建项目, Hexo">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -27,7 +27,7 @@
 </script>
 
 
-    <title>pycharm更改默认文件夹的地址 | Hexo</title>
+    <title>scrapy一.创建项目 | Hexo</title>
     <link rel="icon" type="image/png" href="https://hexo.v-10.cn/picture/2020/08/09/20200809180601.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -320,12 +320,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/1.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/22.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">pycharm更改默认文件夹的地址</h1>
+                    <h1 class="description center-align post-title">scrapy一.创建项目</h1>
                 </div>
             </div>
         </div>
@@ -454,21 +454,21 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2020-09-23
+                    2020-09-30
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2020-09-23
+                    2020-09-30
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    72
+                    254
                 </div>
                 
 
@@ -490,11 +490,66 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>pycharm打开项目的地址经常在c盘，每次更改都要改到文件地址，很麻烦，所以修改pycharm的默认文家地址</p>
-<p>更改打开目录的默认路径：</p>
-<p><code>File——&gt;Settings——&gt;Appearance&amp;Behavior——&gt;System Setting</code></p>
-<p><img src="https://cdn.jsdelivr.net/gh/wcgjob/blog_img/img/20200923004410.png" alt=""></p>
-<p>圈出来的地方就是默认地址</p>
+                <ol>
+<li><h3 id="安装scrapy"><a href="#安装scrapy" class="headerlink" title="安装scrapy"></a>安装scrapy</h3><code>pip install scrapy -i</code></li>
+</ol>
+<h4 id="注：推荐使用anaconda安装，conda-install-scrapy"><a href="#注：推荐使用anaconda安装，conda-install-scrapy" class="headerlink" title="注：推荐使用anaconda安装，conda install scrapy"></a>注：推荐使用<code>anaconda</code>安装，<code>conda install scrapy</code></h4><ol start="2">
+<li><h3 id="创建MyScrapy项目"><a href="#创建MyScrapy项目" class="headerlink" title="创建MyScrapy项目"></a>创建<code>MyScrapy</code>项目</h3></li>
+</ol>
+<ul>
+<li><h3 id="scrapy-startproject-MyScrapy"><a href="#scrapy-startproject-MyScrapy" class="headerlink" title="scrapy startproject MyScrapy"></a><code>scrapy startproject MyScrapy</code></h3></li>
+</ul>
+<p><img src="https://cdn.jsdelivr.net/gh/wcgjob/blog_img/img/20200929235026.png" alt=""></p>
+<ul>
+<li><h4 id="执行后scrapy就会生成一个项目"><a href="#执行后scrapy就会生成一个项目" class="headerlink" title="执行后scrapy就会生成一个项目"></a>执行后<code>scrapy</code>就会生成一个项目</h4></li>
+</ul>
+<p><img src="https://cdn.jsdelivr.net/gh/wcgjob/blog_img/img/20200929235117.png" alt=""></p>
+<ul>
+<li><h4 id="同时执行命令后会有提示"><a href="#同时执行命令后会有提示" class="headerlink" title="同时执行命令后会有提示"></a>同时执行命令后会有提示</h4></li>
+</ul>
+<p><img src="https://cdn.jsdelivr.net/gh/wcgjob/blog_img/img/20200930000106.png" alt=""></p>
+<p><code>cd MyScrapy</code></p>
+<ol start="3">
+<li><h3 id="生成一个爬虫模板-取名是energy-url是www-energy-chemical-com"><a href="#生成一个爬虫模板-取名是energy-url是www-energy-chemical-com" class="headerlink" title="生成一个爬虫模板,取名是energy,url是www.energy-chemical.com"></a>生成一个爬虫模板,取名是<code>energy</code>,url是<code>www.energy-chemical.com</code></h3></li>
+</ol>
+<p><code>scrapy genspider energy www.energy-chemical.com</code></p>
+<ul>
+<li><h4 id="spider下会生成对应名称的py文件"><a href="#spider下会生成对应名称的py文件" class="headerlink" title="spider下会生成对应名称的py文件"></a>spider下会生成对应名称的py文件</h4></li>
+</ul>
+<p><img src="https://cdn.jsdelivr.net/gh/wcgjob/blog_img/img/20200929234203.png" alt=""></p>
+<ul>
+<li><h4 id="其中spiders-文件夹下就有刚刚生成的模板"><a href="#其中spiders-文件夹下就有刚刚生成的模板" class="headerlink" title="其中spiders 文件夹下就有刚刚生成的模板"></a>其中<code>spiders</code> 文件夹下就有刚刚生成的模板</h4><p><img src="https://cdn.jsdelivr.net/gh/wcgjob/blog_img/img/20200929234720.png" alt=""></p>
+</li>
+<li><h4 id="energy-py中的内容"><a href="#energy-py中的内容" class="headerlink" title="energy.py中的内容"></a><code>energy.py</code>中的内容</h4></li>
+</ul>
+<p><img src="https://cdn.jsdelivr.net/gh/wcgjob/blog_img/img/20200929234915.png" alt=""></p>
+<ol start="4">
+<li><h3 id="修改-ROBOTSTXT-OBEY，这是按照robots-txt的规则来的，但是我们很多数据都不允许爬去，所以要修改掉"><a href="#修改-ROBOTSTXT-OBEY，这是按照robots-txt的规则来的，但是我们很多数据都不允许爬去，所以要修改掉" class="headerlink" title="修改 ROBOTSTXT_OBEY，这是按照robots.txt的规则来的，但是我们很多数据都不允许爬去，所以要修改掉"></a>修改 <code>ROBOTSTXT_OBEY</code>，这是按照robots.txt的规则来的，但是我们很多数据都不允许爬去，所以要修改掉</h3></li>
+</ol>
+<p><img src="https://cdn.jsdelivr.net/gh/wcgjob/blog_img/img/20200930000326.png" alt=""></p>
+<ol start="5">
+<li><h3 id="执行爬虫"><a href="#执行爬虫" class="headerlink" title="执行爬虫"></a>执行爬虫</h3></li>
+</ol>
+<ul>
+<li><h4 id="输入命令-scrapy-，下方会有快捷提示，crawl就是执行一个爬虫-后面接去的name-scrapu-crawl-energy"><a href="#输入命令-scrapy-，下方会有快捷提示，crawl就是执行一个爬虫-后面接去的name-scrapu-crawl-energy" class="headerlink" title="输入命令 scrapy ，下方会有快捷提示，crawl就是执行一个爬虫,后面接去的name,scrapu crawl energy"></a>输入命令 <code>scrapy</code> ，下方会有快捷提示，<code>crawl</code>就是执行一个爬虫,后面接去的<code>name</code>,<code>scrapu crawl energy</code></h4></li>
+</ul>
+<p><img src="https://cdn.jsdelivr.net/gh/wcgjob/blog_img/img/20200930000926.png" alt=""></p>
+<ul>
+<li><h4 id="会出现非常多的日志，这些日志很多都是暂时用不到的，所以调整日志的等级，只看我们需要的"><a href="#会出现非常多的日志，这些日志很多都是暂时用不到的，所以调整日志的等级，只看我们需要的" class="headerlink" title="会出现非常多的日志，这些日志很多都是暂时用不到的，所以调整日志的等级，只看我们需要的"></a>会出现非常多的日志，这些日志很多都是暂时用不到的，所以调整日志的等级，只看我们需要的</h4></li>
+</ul>
+<p><img src="https://cdn.jsdelivr.net/gh/wcgjob/blog_img/img/20200930001339.png" alt=""></p>
+<ul>
+<li><h4 id="settings-py-里面添加-LOG-LEVEL-39-WARNING-39"><a href="#settings-py-里面添加-LOG-LEVEL-39-WARNING-39" class="headerlink" title="settings.py 里面添加 LOG_LEVEL = &#39;WARNING&#39;"></a><code>settings.py</code> 里面添加 <code>LOG_LEVEL = &#39;WARNING&#39;</code></h4></li>
+</ul>
+<p><img src="https://cdn.jsdelivr.net/gh/wcgjob/blog_img/img/20200930001719.png" alt=""></p>
+<ul>
+<li><h4 id="在执行一次scrapy-crawl-energy-查看区别"><a href="#在执行一次scrapy-crawl-energy-查看区别" class="headerlink" title="在执行一次scrapy crawl energy 查看区别"></a>在执行一次<code>scrapy crawl energy</code> 查看区别</h4></li>
+</ul>
+<p><img src="https://cdn.jsdelivr.net/gh/wcgjob/blog_img/img/20200930001812.png" alt=""></p>
+<ul>
+<li><h4 id="这是我们什么也没输出，print-response-有信息了"><a href="#这是我们什么也没输出，print-response-有信息了" class="headerlink" title="这是我们什么也没输出，print response,有信息了"></a>这是我们什么也没输出，<code>print response</code>,有信息了</h4></li>
+</ul>
+<p><img src="https://cdn.jsdelivr.net/gh/wcgjob/blog_img/img/20200930001918.png" alt=""></p>
 
             </div>
             <hr/>
@@ -520,7 +575,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://v-10.cn/2020/09/23/pycharm-geng-gai-mo-ren-wen-jian-jia-de-di-zhi/">https://v-10.cn/2020/09/23/pycharm-geng-gai-mo-ren-wen-jian-jia-de-di-zhi/</a>
+                    <a href="https://v-10.cn/2020/09/30/scrapy-yi-chuang-jian-xiang-mu/">https://v-10.cn/2020/09/30/scrapy-yi-chuang-jian-xiang-mu/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -597,9 +652,59 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
+            <div class="card">
+                <a href="/2020/09/30/scrapy-yi-chuang-jian-xiang-mu/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/22.jpg" class="responsive-img" alt="scrapy一.创建项目">
+                        
+                        <span class="card-title">scrapy一.创建项目</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+安装scrapypip install scrapy -i
+
+注：推荐使用anaconda安装，conda install scrapy
+创建MyScrapy项目
+
+
+scrapy startproject MyScrapy
+
+
+
+执行后
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-09-30
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-user fa-fw"></i>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
             <div class="card">
                 <a href="/2020/09/23/pycharm-geng-gai-zi-ti-da-xiao/">
                     <div class="card-image">
@@ -622,50 +727,8 @@ Font是字体类型，
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2020-09-23
-                        </span>
-                        <span class="publish-author">
-                            
-                            <i class="fas fa-user fa-fw"></i>
-                            
-                            
-                        </span>
-                    </div>
-                </div>
-                
-            </div>
-        </div>
-        
-        
-        <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">
-                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
-            </div>
-            <div class="card">
-                <a href="/2020/09/08/hexo-bu-shu-dao-github/">
-                    <div class="card-image">
-                        
-                        
-                        <img src="/medias/featureimages/15.jpg" class="responsive-img" alt="Hexo 部署到 GitHub">
-                        
-                        <span class="card-title">Hexo 部署到 GitHub</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            Hexo 部署到 GitHubhexo部署到GitHub,这样也能分享，不需要服务器
-
-1. 注册一个GitHub的用户前往GitHub官网，点击注册。
-2. 登录后新建一个公开的仓库点击New
-
-仓库的名字一定是自己的用户名+.githu
-                        
-                    </div>
-                    <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-09-08
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-09-23
                             </span>
                         <span class="publish-author">
                             
