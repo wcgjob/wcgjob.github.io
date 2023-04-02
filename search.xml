@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search> 
+  
+  
+    
+    <entry>
+      <title>titleqexo测试</title>
+      <link href="/2023/04/02/qexo-ce-shi/"/>
+      <url>/2023/04/02/qexo-ce-shi/</url>
+      
+        <content type="html"><![CDATA[<h3 id="qexo测试"><a href="#qexo测试" class="headerlink" title="qexo测试"></a>qexo测试</h3>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>pycharm远程连接到服务器</title>
+      <link href="/2020/10/26/pycharm-yuan-cheng-lian-jie-dao-fu-wu-qi/"/>
+      <url>/2020/10/26/pycharm-yuan-cheng-lian-jie-dao-fu-wu-qi/</url>
+      
+        <content type="html"><![CDATA[<h3 id="最近公司为了数据库安全，把登录数据库的账号ip给限定了，但是公司本身的ip却不是固定的，所以为了能本地调试代码，我就选定了一个闲置的服务器，pycharm远程服务器，这样直接运行代码，不用我写好代码-》发布到服务器-》查看结果-》修改代码-》发布到服务器这样-即繁琐，又麻烦"><a href="#最近公司为了数据库安全，把登录数据库的账号ip给限定了，但是公司本身的ip却不是固定的，所以为了能本地调试代码，我就选定了一个闲置的服务器，pycharm远程服务器，这样直接运行代码，不用我写好代码-》发布到服务器-》查看结果-》修改代码-》发布到服务器这样-即繁琐，又麻烦" class="headerlink" title="最近公司为了数据库安全，把登录数据库的账号ip给限定了，但是公司本身的ip却不是固定的，所以为了能本地调试代码，我就选定了一个闲置的服务器，pycharm远程服务器，这样直接运行代码，不用我写好代码-》发布到服务器-》查看结果-》修改代码-》发布到服务器这样,即繁琐，又麻烦"></a>最近公司为了数据库安全，把登录数据库的账号ip给限定了，但是公司本身的ip却不是固定的，所以为了能本地调试代码，我就选定了一个闲置的服务器，pycharm远程服务器，这样直接运行代码，不用我<code>写好代码-》发布到服务器-》查看结果-》修改代码-》发布到服务器</code>这样,即繁琐，又麻烦</h3><hr><h4 id="要求"><a href="#要求" class="headerlink" title="要求:"></a>要求:</h4><ul><li>服务器要有固定的ip,不然就没有意义了</li><li>pycharm 版本得是旗舰版的，社区版没有这个功能\<ul><li>社区版 只能链接本机的环境和本机conda的虚拟环境，不能远程</li><li><img src="https://cdn.jsdelivr.net/gh/wcgjob/blog_img/img/20201025224301.png"></li><li>旗舰版 在社区版的基础上添加了ssh(远程服务器)，wsl(windows子系统，可直接运行ubuntu等Linux),docker，docker-compose</li><li><img src="https://cdn.jsdelivr.net/gh/wcgjob/blog_img/img/20201025224612.png"></li></ul></li></ul><hr><h4 id="方案一"><a href="#方案一" class="headerlink" title="方案一"></a>方案一</h4><ul><li>在服务器内部创建一个docker环境，pycharm连接docker，这样不会影响到宿主机的设置</li><li>但是公司的系统是centos6.9，装docker太困难了，所以放弃</li></ul><hr><h4 id="方案二"><a href="#方案二" class="headerlink" title="方案二"></a>方案二</h4><ul><li>服务器安装anaconda,然后pycharm远程连接到服务器</li><li>选择了这个,这个服务器项目是java的，而且很少有人访问,所以可以采用</li></ul><hr><h4 id="执行"><a href="#执行" class="headerlink" title="执行"></a>执行</h4><h5 id="服务器安装"><a href="#服务器安装" class="headerlink" title="服务器安装:"></a>服务器安装:</h5><ul><li>服务器安装conda</li></ul><h5 id="pycharm-设置"><a href="#pycharm-设置" class="headerlink" title="pycharm 设置"></a>pycharm 设置</h5><ul><li>添加SSH链接，这是用来访问服务器python环境的<ul><li><code>Settings -&gt; Project: -&gt; python Interpreter-&gt;Show All</code>\n<br>  <img src="https://cdn.jsdelivr.net/gh/wcgjob/blog_img/img/20201025230343.png"></li><li>选中SSH，输入账号<br>  <img src="https://cdn.jsdelivr.net/gh/wcgjob/blog_img/img/20201025230445.png"><br>  <img src="https://cdn.jsdelivr.net/gh/wcgjob/blog_img/img/20201025230602.png"></li><li>我用的是私钥登录<br>  <img src="https://cdn.jsdelivr.net/gh/wcgjob/blog_img/img/20201025230836.png"><br>  -设置环境，Python要选清楚是python2还是python3，还是conda虚拟环境的python，我是用conda来管理<br>  <img src="https://cdn.jsdelivr.net/gh/wcgjob/blog_img/img/20201026004010.png"></li><li><code>conda env list</code>,查看conda目前的环境所在地方，然后将意义设置<br>  <img src="https://cdn.jsdelivr.net/gh/wcgjob/blog_img/img/20201026004414.png"><br>  <img src="https://cdn.jsdelivr.net/gh/wcgjob/blog_img/img/20201026004647.png"></li><li>点击确认，就可以看到已经存在了<br>  <img src="https://cdn.jsdelivr.net/gh/wcgjob/blog_img/img/20201026004800.png"></li></ul></li><li>添加服务器FTP或者SFTP的，这是用来自动上传文件到服务器\n<br>  <img src="https://cdn.jsdelivr.net/gh/wcgjob/blog_img/img/20201025225857.png"><ul><li><code>Tools-&gt;Deployment-&gt;Configuration</code>\n<br>  <img src="https://cdn.jsdelivr.net/gh/wcgjob/blog_img/img/20201025225619.png"></li><li>设置文件根目录，根目录设置成存放文件的上一级<br>  <img src="https://cdn.jsdelivr.net/gh/wcgjob/blog_img/img/20201026005155.png"><br>  <img src="https://cdn.jsdelivr.net/gh/wcgjob/blog_img/img/20201026005426.png"></li><li>点击下面的按钮，就能添加对应关系了，一般一个项目一个映射地址<br>  <img src="https://cdn.jsdelivr.net/gh/wcgjob/blog_img/img/20201026005516.png"></li><li>还有一个自动上传，选中后，写完代码按<code>ctrl+s</code>自动上传<br>  <img src="https://cdn.jsdelivr.net/gh/wcgjob/blog_img/img/20201026005838.png"></li></ul></li></ul><hr><h4 id="测试"><a href="#测试" class="headerlink" title="测试"></a>测试</h4><p>随便写几句，保存，这里的保存分自动保存本地和自动上传到服务器，自动保存本地什么也不用做，而自动上传到服务器是需要按<code>ctrl+s</code>触发</p><p><img src="https://cdn.jsdelivr.net/gh/wcgjob/blog_img/img/20201026010213.png"></p><ul><li>可见已经成功了，那么执行一次呢？</li></ul><p><img src="https://cdn.jsdelivr.net/gh/wcgjob/blog_img/img/20201026010305.png"></p><ul><li>我们去服务器看看</li></ul><p><img src="https://cdn.jsdelivr.net/gh/wcgjob/blog_img/img/20201026010349.png"></p><ul><li>最后两行成功了，说明已经做好了</li></ul>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>scrapy一.创建项目</title>
+      <link href="/2020/09/30/scrapy-yi-chuang-jian-xiang-mu/"/>
+      <url>/2020/09/30/scrapy-yi-chuang-jian-xiang-mu/</url>
+      
+        <content type="html"><![CDATA[<ol><li><h3 id="安装scrapy"><a href="#安装scrapy" class="headerlink" title="安装scrapy"></a>安装scrapy</h3></li></ol><p><code>pip install scrapy -i </code></p><h4 id="注：推荐使用anaconda安装，conda-install-scrapy"><a href="#注：推荐使用anaconda安装，conda-install-scrapy" class="headerlink" title="注：推荐使用anaconda安装，conda install scrapy"></a>注：推荐使用<code>anaconda</code>安装，<code>conda install scrapy</code></h4><ol start="2"><li><h3 id="创建MyScrapy项目"><a href="#创建MyScrapy项目" class="headerlink" title="创建MyScrapy项目"></a>创建<code>MyScrapy</code>项目</h3></li></ol><ul><li><h3 id="scrapy-startproject-MyScrapy"><a href="#scrapy-startproject-MyScrapy" class="headerlink" title="scrapy startproject MyScrapy"></a><code>scrapy startproject MyScrapy</code></h3></li></ul><p><img src="https://cdn.jsdelivr.net/gh/wcgjob/blog_img/img/20200929235026.png"></p><ul><li><h4 id="执行后scrapy就会生成一个项目"><a href="#执行后scrapy就会生成一个项目" class="headerlink" title="执行后scrapy就会生成一个项目"></a>执行后<code>scrapy</code>就会生成一个项目</h4></li></ul><p><img src="https://cdn.jsdelivr.net/gh/wcgjob/blog_img/img/20200929235117.png"></p><ul><li><h4 id="同时执行命令后会有提示"><a href="#同时执行命令后会有提示" class="headerlink" title="同时执行命令后会有提示"></a>同时执行命令后会有提示</h4></li></ul><p><img src="https://cdn.jsdelivr.net/gh/wcgjob/blog_img/img/20200930000106.png"></p><p><code>cd MyScrapy</code></p><ol start="3"><li><h3 id="生成一个爬虫模板-取名是energy-url是www-energy-chemical-com"><a href="#生成一个爬虫模板-取名是energy-url是www-energy-chemical-com" class="headerlink" title="生成一个爬虫模板,取名是energy,url是www.energy-chemical.com"></a>生成一个爬虫模板,取名是<code>energy</code>,url是<code>www.energy-chemical.com</code></h3></li></ol><p><code>scrapy genspider energy www.energy-chemical.com</code></p><ul><li><h4 id="spider下会生成对应名称的py文件"><a href="#spider下会生成对应名称的py文件" class="headerlink" title="spider下会生成对应名称的py文件"></a>spider下会生成对应名称的py文件</h4></li></ul><p><img src="https://cdn.jsdelivr.net/gh/wcgjob/blog_img/img/20200929234203.png"></p><ul><li><h4 id="其中spiders-文件夹下就有刚刚生成的模板"><a href="#其中spiders-文件夹下就有刚刚生成的模板" class="headerlink" title="其中spiders 文件夹下就有刚刚生成的模板"></a>其中<code>spiders</code> 文件夹下就有刚刚生成的模板</h4></li></ul><p><img src="https://cdn.jsdelivr.net/gh/wcgjob/blog_img/img/20200929234720.png"></p><ul><li><h4 id="energy-py中的内容"><a href="#energy-py中的内容" class="headerlink" title="energy.py中的内容"></a><code>energy.py</code>中的内容</h4></li></ul><p><img src="https://cdn.jsdelivr.net/gh/wcgjob/blog_img/img/20200929234915.png"></p><ol start="4"><li><h3 id="修改-ROBOTSTXT-OBEY，这是按照robots-txt的规则来的，但是我们很多数据都不允许爬去，所以要修改掉"><a href="#修改-ROBOTSTXT-OBEY，这是按照robots-txt的规则来的，但是我们很多数据都不允许爬去，所以要修改掉" class="headerlink" title="修改 ROBOTSTXT_OBEY，这是按照robots.txt的规则来的，但是我们很多数据都不允许爬去，所以要修改掉"></a>修改 <code>ROBOTSTXT_OBEY</code>，这是按照robots.txt的规则来的，但是我们很多数据都不允许爬去，所以要修改掉</h3></li></ol><p><img src="https://cdn.jsdelivr.net/gh/wcgjob/blog_img/img/20200930000326.png"></p><ol start="5"><li><h3 id="执行爬虫"><a href="#执行爬虫" class="headerlink" title="执行爬虫"></a>执行爬虫</h3></li></ol><ul><li><h4 id="输入命令-scrapy-，下方会有快捷提示，crawl就是执行一个爬虫-后面接去的name-scrapu-crawl-energy"><a href="#输入命令-scrapy-，下方会有快捷提示，crawl就是执行一个爬虫-后面接去的name-scrapu-crawl-energy" class="headerlink" title="输入命令 scrapy ，下方会有快捷提示，crawl就是执行一个爬虫,后面接去的name,scrapu crawl energy"></a>输入命令 <code>scrapy</code> ，下方会有快捷提示，<code>crawl</code>就是执行一个爬虫,后面接去的<code>name</code>,<code>scrapu crawl energy</code></h4></li></ul><p><img src="https://cdn.jsdelivr.net/gh/wcgjob/blog_img/img/20200930000926.png"></p><ul><li><h4 id="会出现非常多的日志，这些日志很多都是暂时用不到的，所以调整日志的等级，只看我们需要的"><a href="#会出现非常多的日志，这些日志很多都是暂时用不到的，所以调整日志的等级，只看我们需要的" class="headerlink" title="会出现非常多的日志，这些日志很多都是暂时用不到的，所以调整日志的等级，只看我们需要的"></a>会出现非常多的日志，这些日志很多都是暂时用不到的，所以调整日志的等级，只看我们需要的</h4></li></ul><p><img src="https://cdn.jsdelivr.net/gh/wcgjob/blog_img/img/20200930001339.png"></p><ul><li><h4 id="settings-py-里面添加-LOG-LEVEL-39-WARNING-39"><a href="#settings-py-里面添加-LOG-LEVEL-39-WARNING-39" class="headerlink" title="settings.py 里面添加 LOG_LEVEL = 'WARNING'"></a><code>settings.py</code> 里面添加 <code>LOG_LEVEL = 'WARNING'</code></h4></li></ul><p><img src="https://cdn.jsdelivr.net/gh/wcgjob/blog_img/img/20200930001719.png"></p><ul><li><h4 id="在执行一次scrapy-crawl-energy-查看区别"><a href="#在执行一次scrapy-crawl-energy-查看区别" class="headerlink" title="在执行一次scrapy crawl energy 查看区别"></a>在执行一次<code>scrapy crawl energy</code> 查看区别</h4></li></ul><p><img src="https://cdn.jsdelivr.net/gh/wcgjob/blog_img/img/20200930001812.png"></p><ul><li><h4 id="这是我们什么也没输出，print-response-有信息了"><a href="#这是我们什么也没输出，print-response-有信息了" class="headerlink" title="这是我们什么也没输出，print response,有信息了"></a>这是我们什么也没输出，<code>print response</code>,有信息了</h4></li></ul><p><img src="https://cdn.jsdelivr.net/gh/wcgjob/blog_img/img/20200930001918.png"></p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>pycharm更改字体大小</title>
+      <link href="/2020/09/23/pycharm-geng-gai-zi-ti-da-xiao/"/>
+      <url>/2020/09/23/pycharm-geng-gai-zi-ti-da-xiao/</url>
+      
+        <content type="html"><![CDATA[<p>默认字体大小看不清,所以调大点</p><p><code>Settings -&gt; Editor -&gt; Color Scheme -&gt; Color Scheme Font</code></p><p><img src="https://cdn.jsdelivr.net/gh/wcgjob/blog_img/img/20200923005911.png"></p><p>圈出来的就是字体大小</p><p><code>Font</code>是字体类型，</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>pycharm更改默认文件夹的地址</title>
+      <link href="/2020/09/23/pycharm-geng-gai-mo-ren-wen-jian-jia-de-di-zhi/"/>
+      <url>/2020/09/23/pycharm-geng-gai-mo-ren-wen-jian-jia-de-di-zhi/</url>
+      
+        <content type="html"><![CDATA[<p>pycharm打开项目的地址经常在c盘，每次更改都要改到文件地址，很麻烦，所以修改pycharm的默认文家地址</p><p>更改打开目录的默认路径：</p><p><code>File——&gt;Settings——&gt;Appearance&amp;Behavior——&gt;System Setting</code></p><p><img src="https://cdn.jsdelivr.net/gh/wcgjob/blog_img/img/20200923004410.png"></p><p>圈出来的地方就是默认地址</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Hexo 部署到 GitHub</title>
+      <link href="/2020/09/08/hexo-bu-shu-dao-github/"/>
+      <url>/2020/09/08/hexo-bu-shu-dao-github/</url>
+      
+        <content type="html"><![CDATA[<h3 id="Hexo-部署到-GitHub"><a href="#Hexo-部署到-GitHub" class="headerlink" title="Hexo 部署到 GitHub"></a>Hexo 部署到 GitHub</h3><p>hexo部署到GitHub,这样也能分享，不需要服务器</p><hr><h4 id="1-注册一个GitHub的用户"><a href="#1-注册一个GitHub的用户" class="headerlink" title="1. 注册一个GitHub的用户"></a>1. 注册一个GitHub的用户</h4><p>前往<a href="https://github.com/">GitHub官网</a>，点击注册。</p><h4 id="2-登录后新建一个公开的仓库"><a href="#2-登录后新建一个公开的仓库" class="headerlink" title="2. 登录后新建一个公开的仓库"></a>2. 登录后新建一个公开的仓库</h4><p>点击<code>New</code></p><p><img src="https://osshexo.oss-cn-shanghai.aliyuncs.com/picture/20200701/Github1.png" alt="GitHub1"></p><p>仓库的名字一定是自己的用户名+<code>.github.io</code>，例如用户名<code>zhangsan</code>,仓库明就是<code>zhangsan.github.io</code>,选择公开仓库，点击create</p><p><img src="https://osshexo.oss-cn-shanghai.aliyuncs.com/picture/20200701/github2.png" alt="github2"></p><h3 id="3-推送到仓库中"><a href="#3-推送到仓库中" class="headerlink" title="3. 推送到仓库中"></a>3. 推送到仓库中</h3><p>首先在<code>_config.yml</code>修改参数，加上</p><pre class="line-numbers language-none"><code class="language-none">deploy:  type: git  repo: 你的仓库（Repository）  branch:master<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre><p>然后执行命令</p><pre class="line-numbers language-none"><code class="language-none">hexo cleanhexo ghexo d<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre><p><code>hexo clean</code></p><p>清除缓存文件 (db.json) 和已生成的静态文件 (public)。</p><p><code>hexo d</code>是<code>hexo deploy</code><br>部署网站</p><p>可以简化成一条命令</p><p><code>hexo clean &amp;&amp; hexo g &amp;&amp; hexo d</code></p><p>弹出提示框，输入github的账号和密码，稍等片刻<br><img src="https://osshexo.oss-cn-shanghai.aliyuncs.com/picture/20200701/github3.png" alt="github3"></p><p>打开浏览器，在浏览器输入自己的用户名+<code>.github.io</code></p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>修改树莓派ip</title>
+      <link href="/2020/09/06/xiu-gai-shu-mei-pai-ip/"/>
+      <url>/2020/09/06/xiu-gai-shu-mei-pai-ip/</url>
+      
+        <content type="html"><![CDATA[<h3 id="在-etc-network-interfaces查看信息"><a href="#在-etc-network-interfaces查看信息" class="headerlink" title="在/etc/network/interfaces查看信息"></a>在<code>/etc/network/interfaces</code>查看信息</h3><pre><code> `cat /etc/network/interfaces`</code></pre><p><img src="https://hexo.v-10.cn/picture/2020/09/06/20200906222648.png"></p><pre><code>修改静态ip，需要到 /etc/dhcpcd.conf </code></pre><h3 id="然后修改-etc-dhcpcd-conf"><a href="#然后修改-etc-dhcpcd-conf" class="headerlink" title="然后修改/etc/dhcpcd.conf "></a>然后修改<code>/etc/dhcpcd.conf </code></h3><pre><code>`vi  /etc/dhcpcd.conf `</code></pre><p><img src="https://hexo.v-10.cn/picture/2020/09/06/20200906223112.png"></p><pre><code>按照上面的例子，填上自己需求的固定ip</code></pre>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>centos8启用网卡，AX200安装驱动并启动，测试AX200的性能6</title>
+      <link href="/2020/08/16/centos8-qi-yong-wang-qia-ax200-an-zhuang-qu-dong-bing-qi-dong-ce-shi-ax200-de-xing-neng-6/"/>
+      <url>/2020/08/16/centos8-qi-yong-wang-qia-ax200-an-zhuang-qu-dong-bing-qi-dong-ce-shi-ax200-de-xing-neng-6/</url>
+      
+        <content type="html"><![CDATA[<h2 id="centos8-最小安装之后，插上网线但是没有网络"><a href="#centos8-最小安装之后，插上网线但是没有网络" class="headerlink" title="centos8 最小安装之后，插上网线但是没有网络"></a>centos8 最小安装之后，插上网线但是没有网络</h2><ol><li><h3 id="首先查看网络"><a href="#首先查看网络" class="headerlink" title="首先查看网络"></a>首先查看网络</h3><p><code>ip addr </code></p><p><img src="https://hexo.v-10.cn/picture/2020/08/15/20200815235234.png" alt="网络连接"></p><p><code>nmcli connection</code></p><p><img src="https://hexo.v-10.cn/picture/2020/08/15/20200815235626.png"></p><p><code>enp3s0</code>是我的有线网卡 <code>wlp2s0</code>是我刚买的的AX200无线网卡</p></li><li><h3 id="到-etc-sysconfig-network-scripts去看配置"><a href="#到-etc-sysconfig-network-scripts去看配置" class="headerlink" title="到/etc/sysconfig/network-scripts去看配置"></a>到<code>/etc/sysconfig/network-scripts</code>去看配置</h3><p> <code>cd /etc/sysconfig/network-scripts</code></p><p> <img src="https://hexo.v-10.cn/picture/2020/08/15/20200815235504.png"></p><p> <code>vi ifcfg-enp3s0</code></p><p> <img src="https://hexo.v-10.cn/picture/2020/08/15/20200815235746.png"></p><p> 把<code>ONBOOT = no</code>改成<code>ONBOOT = no</code>,保存退出</p><p> 重启电脑，有线网卡就正常使用了<br> <code>reboot</code></p></li><li><h3 id="下载AX200的驱动（linux）"><a href="#下载AX200的驱动（linux）" class="headerlink" title="下载AX200的驱动（linux）"></a>下载AX200的驱动（linux）</h3><p> <a href="https://www.intel.cn/content/www/cn/zh/support/articles/000005511/network-and-i-o/wireless.html">英特尔® 无线适配器的 Linux* 支持 </a></p><p> <img src="https://hexo.v-10.cn/picture/2020/08/16/20200816000226.png"></p><p> <a href="https://wireless.wiki.kernel.org/_media/en/users/drivers/iwlwifi/iwlwifi-cc-46.3cfab8da.0.tgz">驱动下载链接</a></p></li><li><h3 id="下载好的文件放到-lib-firmware，然后解压"><a href="#下载好的文件放到-lib-firmware，然后解压" class="headerlink" title="下载好的文件放到/lib/firmware，然后解压"></a>下载好的文件放到<code>/lib/firmware</code>，然后解压</h3><p> 网站说明:</p><p> <img src="https://hexo.v-10.cn/picture/2020/08/16/20200816000329.png"></p><p> <code>cd /lib/firmware</code>文件解压放好</p><p> <img src="https://hexo.v-10.cn/picture/2020/08/16/20200816000701.png"></p><p> <img src="https://hexo.v-10.cn/picture/2020/08/16/20200816000715.png"></p><p> 再次重启电脑</p></li><li><h3 id="启动无线网卡（存疑，因为此时我执行了很多命令，不知道这些可不可以省略）"><a href="#启动无线网卡（存疑，因为此时我执行了很多命令，不知道这些可不可以省略）" class="headerlink" title="启动无线网卡（存疑，因为此时我执行了很多命令，不知道这些可不可以省略）"></a>启动无线网卡（存疑，因为此时我执行了很多命令，不知道这些可不可以省略）</h3> <pre class="line-numbers language-none"><code class="language-none">systemctl stop NetworkManagersystemctl disable NetworkManagersystemctl start NetworkManagernmcli c reload<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre><p> 现在已经能使用了</p><p> <code>但是此时我并不需要有线网卡,我就把有线网卡关掉了</code></p></li><li><h3 id="AX200的性能测试"><a href="#AX200的性能测试" class="headerlink" title="AX200的性能测试"></a>AX200的性能测试</h3><p> 路由器:斐讯K3</p><p> 网络：5G局域网</p><p> 可惜的是k3路由器并不支持wifi6，但是对于使用并没有影响</p><ol><li><h3 id="局域网大文件传输"><a href="#局域网大文件传输" class="headerlink" title="局域网大文件传输"></a>局域网大文件传输</h3><p> <img src="https://hexo.v-10.cn/picture/2020/08/16/20200816001720.png"></p><p> 我把我的下载的centos8的文件传一下，7.66G</p><p> <img src="https://hexo.v-10.cn/picture/2020/08/16/20200816001835.png"></p><p> 速度在30-50M/s徘徊，ok，非常好，对我而言已经够使用了</p></li><li><h3 id="网络大文件下载速度"><a href="#网络大文件下载速度" class="headerlink" title="网络大文件下载速度"></a>网络大文件下载速度</h3><p><a href="https://mirrors.aliyun.com/centos/8/isos/x86_64/CentOS-8.2.2004-x86_64-boot.iso">阿里云官方镜像站centos&amp;下载</a></p><p>我拿阿里云镜像下载一个，看能不能跑满带宽</p><p><img src="https://hexo.v-10.cn/picture/2020/08/16/20200816003203.png"></p><p>现在用迅雷下载速度大概是40M/s左右</p><p><code>wget -P /opt/ https://mirrors.aliyun.com/centos/8/isos/x86_64/CentOS-8.2.2004-x86_64-boot.iso</code></p><p><img src="https://hexo.v-10.cn/picture/2020/08/16/20200816003031.png"></p><p>而linux则是一半18M/s,考虑到迅雷下载软件的问题，可以接受</p></li></ol></li></ol>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>自定义hexo的域名</title>
+      <link href="/2020/08/09/zi-ding-yi-hexo-de-yu-ming/"/>
+      <url>/2020/08/09/zi-ding-yi-hexo-de-yu-ming/</url>
+      
+        <content type="html"><![CDATA[<p>#登录到仓库中，点击<code>settings</code></p><p><img src="https://hexo.v-10.cn/picture/2020/08/09/20200809161531.png"></p><p>设置<code>Custom domain</code>，并且把<code>Enforce HTTPS</code>勾上，HTTPS可能需要等一段时间，这样域名就可以用https</p><p><img src="https://hexo.v-10.cn/picture/2020/08/09/20200809163822.png"></p><p>在hexo的source文件里面添加一个CNAME，没有后缀</p><p><img src="https://hexo.v-10.cn/picture/2020/08/09/20200809163438.png"></p><p>内容就是自己的域名</p><p><img src="https://hexo.v-10.cn/picture/2020/08/09/20200809163458.png"></p><p>然后DNS解析里面设置，把域名指向github的域名</p><p>这时候就可以使用自己的域名访问博客了</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>pip更换成清华源</title>
+      <link href="/2020/07/21/pip-geng-huan-cheng-qing-hua-yuan/"/>
+      <url>/2020/07/21/pip-geng-huan-cheng-qing-hua-yuan/</url>
+      
+        <content type="html"><![CDATA[<pre class="line-numbers language-none"><code class="language-none">pip install -i https://pypi.tuna.tsinghua.edu.cn/simple pip -Upip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><p>参考：<a href="https://mirrors.tuna.tsinghua.edu.cn/help/pypi/">清华 pypi 镜像使用帮助</a></p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>华为源</title>
+      <link href="/2020/07/14/armcentos7-geng-huan-hua-wei-yuan/"/>
+      <url>/2020/07/14/armcentos7-geng-huan-hua-wei-yuan/</url>
+      
+        <content type="html"><![CDATA[<h3 id="最近我在树莓派下尝试了arm版的centos，但是下载速度很慢，所以我更换了华为源"><a href="#最近我在树莓派下尝试了arm版的centos，但是下载速度很慢，所以我更换了华为源" class="headerlink" title="最近我在树莓派下尝试了arm版的centos，但是下载速度很慢，所以我更换了华为源"></a>最近我在树莓派下尝试了arm版的centos，但是下载速度很慢，所以我更换了华为源</h3><p>首先登陆<a href="https://mirrors.huaweicloud.com/">华为开源站</a></p><p>1、安装wget：</p><pre class="line-numbers language-none"><code class="language-none">yum install wget -y<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>2.备份配置文件</p><pre class="line-numbers language-none"><code class="language-none">cp -a /etc/yum.repos.d/CentOS-Base.repo /etc/yum.repos.d/CentOS-Base.repo.bak<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>3.下载</p><pre class="line-numbers language-none"><code class="language-none">wget -O /etc/yum.repos.d/CentOS-Base.repo https://repo.huaweicloud.com/repository/conf/CentOS-AltArch-7.repo<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>4.执行<code>yum clean all</code>清除原有yum缓存。</p><p>5.执行<code>yum makecache</code>（刷新缓存）</p><h3 id="这样就可以使用华为镜像源了"><a href="#这样就可以使用华为镜像源了" class="headerlink" title="这样就可以使用华为镜像源了"></a>这样就可以使用华为镜像源了</h3>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Hexo简介</title>
+      <link href="/2020/07/02/da-jian-hexo-bo-ke/"/>
+      <url>/2020/07/02/da-jian-hexo-bo-ke/</url>
+      
+        <content type="html"><![CDATA[<h3 id="Hexo简介"><a href="#Hexo简介" class="headerlink" title="Hexo简介"></a>Hexo简介</h3><p>Hexo 是一个快速、简洁且高效的博客框架。Hexo 使用 Markdown（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。</p><hr><h3 id="Hexo搭建步骤"><a href="#Hexo搭建步骤" class="headerlink" title="Hexo搭建步骤"></a>Hexo搭建步骤</h3><h3 id="1-安装Git-Windows"><a href="#1-安装Git-Windows" class="headerlink" title="1.安装Git(Windows)"></a>1.安装Git(Windows)</h3><p><a href="https://gitforwindows.org/">Git官网</a></p><p>我选择了<a href="https://pc.qq.com/">腾讯软件中心</a>搜索Git,或者<a href="https://npm.taobao.org/mirrors/git-for-windows/">淘宝镜像</a>，因为访问到Git官网实在太慢了</p><p>随意在任意桌面右键,有Git Bash代表安装成功！</p><p><img src="https://hexo.v-10.cn/picture/20200701/git1.png" alt="git"></p><p>Git Bash可以使用Win自带的命令</p><h3 id="2-安装nodejs（Windows）"><a href="#2-安装nodejs（Windows）" class="headerlink" title="2. 安装nodejs（Windows）"></a>2. 安装nodejs（Windows）</h3><p><a href="https://nodejs.org/zh-cn/download/">nodejs官网下载</a></p><p>选择LTS(长期支持)</p><p>安装完后，打开命令行</p><pre class="line-numbers language-none"><code class="language-none">node -vnpm -v<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><p><img src="https://hexo.v-10.cn/picture/20200701/nodejs1.png" alt="nodejs"></p><h3 id="3-安装hexo"><a href="#3-安装hexo" class="headerlink" title="3. 安装hexo"></a>3. 安装hexo</h3><p>输入命令</p><pre class="line-numbers language-none"><code class="language-none">npm install -g hexo-cli<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>确认命令</p><pre class="line-numbers language-none"><code class="language-none">hexo -v<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p><img src="https://hexo.v-10.cn/picture/20200701/hexo2.png" alt="hexo2"></p><p>找个文件夹,初始化hexo</p><pre class="line-numbers language-none"><code class="language-none">hexo init blogcd blognpm install<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre><p>新建完成后，指定文件夹的目录如下：</p><pre class="line-numbers language-none"><code class="language-none">.├── _config.yml├── package.json├── scaffolds├── source|   ├── _drafts|   └── _posts└── themes<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>我主要用到 配置文件<code>_config.yml</code>,主题<code>themes</code>,存放文章<code>source</code>这三个</p><ol start="4"><li>运行hexo<br>输入两个命令<pre class="line-numbers language-none"><code class="language-none">hexo ghexo s<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><img src="https://hexo.v-10.cn/picture/20200701/hexo3.png"></li></ol><p><img src="https://hexo.v-10.cn/picture/20200701/hexo4.png"></p><p><code>hexo g</code> 是 <code>hexo generate</code>,生成静态文件<br><code>hexo s</code> 是 <code>hexo server</code>，启动服务器。 </p><p>按Ctrl + C 停止</p><p>我已经安装了Next主题，所以和默认不一样</p><p>默认情况下，访问网址为： <a href="http://localhost:4000/">http://localhost:4000/</a><br><img src="https://hexo.v-10.cn/picture/20200701/hexo1.png"></p><p>hexo已经安装可以使用了！</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+  
+  
+</search>

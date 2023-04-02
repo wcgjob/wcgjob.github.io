@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Hexo</title>
+  
+  
+  <link href="https://v-10.cn/atom.xml" rel="self"/>
+  
+  <link href="https://v-10.cn/"/>
+  <updated>2023-04-02T13:55:28.000Z</updated>
+  <id>https://v-10.cn/</id>
+  
+  <author>
+    <name>John Doe</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>titleqexo测试</title>
+    <link href="https://v-10.cn/2023/04/02/qexo-ce-shi/"/>
+    <id>https://v-10.cn/2023/04/02/qexo-ce-shi/</id>
+    <published>2023-04-02T13:55:24.000Z</published>
+    <updated>2023-04-02T13:55:28.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h3 id=&quot;qexo测试&quot;&gt;&lt;a href=&quot;#qexo测试&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>pycharm远程连接到服务器</title>
+    <link href="https://v-10.cn/2020/10/26/pycharm-yuan-cheng-lian-jie-dao-fu-wu-qi/"/>
+    <id>https://v-10.cn/2020/10/26/pycharm-yuan-cheng-lian-jie-dao-fu-wu-qi/</id>
+    <published>2020-10-25T17:04:57.000Z</published>
+    <updated>2023-04-02T13:42:55.092Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h3</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>scrapy一.创建项目</title>
+    <link href="https://v-10.cn/2020/09/30/scrapy-yi-chuang-jian-xiang-mu/"/>
+    <id>https://v-10.cn/2020/09/30/scrapy-yi-chuang-jian-xiang-mu/</id>
+    <published>2020-09-29T16:25:14.000Z</published>
+    <updated>2023-04-02T13:42:55.092Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;ol&gt;
+&lt;li&gt;&lt;h3 id=&quot;安装scrapy&quot;&gt;&lt;a href=&quot;#安装scrapy&quot; class=&quot;headerlink&quot; title=&quot;安装scrapy&quot;&gt;&lt;/a&gt;安装scrapy&lt;/h3&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;code&gt;pip install scrapy</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>pycharm更改字体大小</title>
+    <link href="https://v-10.cn/2020/09/23/pycharm-geng-gai-zi-ti-da-xiao/"/>
+    <id>https://v-10.cn/2020/09/23/pycharm-geng-gai-zi-ti-da-xiao/</id>
+    <published>2020-09-22T17:01:26.000Z</published>
+    <updated>2023-04-02T13:42:55.090Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;默认字体大小看不清,所以调大点&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;Settings -&amp;gt; Editor -&amp;gt; Color Scheme -&amp;gt; Color Scheme Font&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>pycharm更改默认文件夹的地址</title>
+    <link href="https://v-10.cn/2020/09/23/pycharm-geng-gai-mo-ren-wen-jian-jia-de-di-zhi/"/>
+    <id>https://v-10.cn/2020/09/23/pycharm-geng-gai-mo-ren-wen-jian-jia-de-di-zhi/</id>
+    <published>2020-09-22T16:46:20.000Z</published>
+    <updated>2023-04-02T13:42:55.091Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;pycharm打开项目的地址经常在c盘，每次更改都要改到文件地址，很麻烦，所以修改pycharm的默认文家地址&lt;/p&gt;
+&lt;p&gt;更改打开目录的默认路径：&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;File——&amp;gt;Settings——&amp;gt;Appearance&amp;amp;Behavior—</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Hexo 部署到 GitHub</title>
+    <link href="https://v-10.cn/2020/09/08/hexo-bu-shu-dao-github/"/>
+    <id>https://v-10.cn/2020/09/08/hexo-bu-shu-dao-github/</id>
+    <published>2020-09-07T17:01:00.000Z</published>
+    <updated>2023-04-02T13:42:55.089Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h3 id=&quot;Hexo-部署到-GitHub&quot;&gt;&lt;a href=&quot;#Hexo-部署到-GitHub&quot; class=&quot;headerlink&quot; title=&quot;Hexo 部署到 GitHub&quot;&gt;&lt;/a&gt;Hexo 部署到</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>修改树莓派ip</title>
+    <link href="https://v-10.cn/2020/09/06/xiu-gai-shu-mei-pai-ip/"/>
+    <id>https://v-10.cn/2020/09/06/xiu-gai-shu-mei-pai-ip/</id>
+    <published>2020-09-06T14:37:00.000Z</published>
+    <updated>2023-04-02T13:42:55.092Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h3 id=&quot;在-etc-network-interfaces查看信息&quot;&gt;&lt;a href=&quot;#在-etc-network-interfaces查看信息&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>centos8启用网卡，AX200安装驱动并启动，测试AX200的性能6</title>
+    <link href="https://v-10.cn/2020/08/16/centos8-qi-yong-wang-qia-ax200-an-zhuang-qu-dong-bing-qi-dong-ce-shi-ax200-de-xing-neng-6/"/>
+    <id>https://v-10.cn/2020/08/16/centos8-qi-yong-wang-qia-ax200-an-zhuang-qu-dong-bing-qi-dong-ce-shi-ax200-de-xing-neng-6/</id>
+    <published>2020-08-15T16:36:25.000Z</published>
+    <updated>2023-04-02T13:42:55.090Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;centos8-最小安装之后，插上网线但是没有网络&quot;&gt;&lt;a href=&quot;#centos8-最小安装之后，插上网线但是没有网络&quot; class=&quot;headerlink&quot; title=&quot;centos8 最小安装之后，插上网线但是没有网络&quot;&gt;&lt;/a&gt;centos8</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>自定义hexo的域名</title>
+    <link href="https://v-10.cn/2020/08/09/zi-ding-yi-hexo-de-yu-ming/"/>
+    <id>https://v-10.cn/2020/08/09/zi-ding-yi-hexo-de-yu-ming/</id>
+    <published>2020-08-09T08:41:07.000Z</published>
+    <updated>2023-04-02T13:42:55.093Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;#登录到仓库中，点击&lt;code&gt;settings&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://hexo.v-10.cn/picture/2020/08/09/20200809161531.png&quot;&gt;&lt;/p&gt;
+&lt;p&gt;设置&lt;code&gt;Custom</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>pip更换成清华源</title>
+    <link href="https://v-10.cn/2020/07/21/pip-geng-huan-cheng-qing-hua-yuan/"/>
+    <id>https://v-10.cn/2020/07/21/pip-geng-huan-cheng-qing-hua-yuan/</id>
+    <published>2020-07-21T01:43:04.000Z</published>
+    <updated>2023-04-02T13:42:55.090Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;pre class=&quot;line-numbers language-none&quot;&gt;&lt;code class=&quot;language-none&quot;&gt;pip install -i https://pypi.tuna.tsinghua.edu.cn/simple pip -U
+pip</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>华为源</title>
+    <link href="https://v-10.cn/2020/07/14/armcentos7-geng-huan-hua-wei-yuan/"/>
+    <id>https://v-10.cn/2020/07/14/armcentos7-geng-huan-hua-wei-yuan/</id>
+    <published>2020-07-14T15:18:07.000Z</published>
+    <updated>2023-04-02T13:42:55.089Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h3 id=&quot;最近我在树莓派下尝试了arm版的centos，但是下载速度很慢，所以我更换了华为源&quot;&gt;&lt;a href=&quot;#最近我在树莓派下尝试了arm版的centos，但是下载速度很慢，所以我更换了华为源&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Hexo简介</title>
+    <link href="https://v-10.cn/2020/07/02/da-jian-hexo-bo-ke/"/>
+    <id>https://v-10.cn/2020/07/02/da-jian-hexo-bo-ke/</id>
+    <published>2020-07-02T15:18:07.000Z</published>
+    <updated>2023-04-02T13:42:55.093Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h3 id=&quot;Hexo简介&quot;&gt;&lt;a href=&quot;#Hexo简介&quot; class=&quot;headerlink&quot; title=&quot;Hexo简介&quot;&gt;&lt;/a&gt;Hexo简介&lt;/h3&gt;&lt;p&gt;Hexo 是一个快速、简洁且高效的博客框架。Hexo 使用</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+</feed>
